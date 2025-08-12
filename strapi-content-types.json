@@ -1,0 +1,96 @@
+{
+  "contentTypes": {
+    "products": {
+      "fields": {
+        "name": "string",
+        "description": "text",
+        "longDescription": "richtext",
+        "features": "json",
+        "price": "string",
+        "category": "enumeration",
+        "slug": "uid",
+        "featured": "boolean",
+        "image": "media",
+        "gallery": "media",
+        "published": "boolean"
+      }
+    },
+    "services": {
+      "fields": {
+        "name": "string",
+        "description": "text",
+        "icon": "string",
+        "features": "json",
+        "slug": "uid",
+        "order": "integer"
+      }
+    },
+    "team-members": {
+      "fields": {
+        "name": "string",
+        "role": "string",
+        "bio": "text",
+        "image": "media",
+        "socialLinks": "json",
+        "order": "integer"
+      }
+    },
+    "testimonials": {
+      "fields": {
+        "name": "string",
+        "company": "string",
+        "content": "text",
+        "rating": "integer",
+        "image": "media",
+        "published": "boolean"
+      }
+    },
+    "blog-posts": {
+      "fields": {
+        "title": "string",
+        "excerpt": "text",
+        "content": "richtext",
+        "slug": "uid",
+        "author": "string",
+        "image": "media",
+        "categories": "relation",
+        "featured": "boolean",
+        "published": "boolean",
+        "publishedAt": "datetime"
+      }
+    },
+    "portfolio-projects": {
+      "fields": {
+        "title": "string",
+        "description": "text",
+        "longDescription": "richtext",
+        "category": "string",
+        "technologies": "json",
+        "features": "json",
+        "challenges": "json",
+        "results": "json",
+        "clientName": "string",
+        "projectDuration": "string",
+        "teamSize": "integer",
+        "slug": "uid",
+        "image": "media",
+        "gallery": "media",
+        "featured": "boolean",
+        "published": "boolean"
+      }
+    },
+    "company-info": {
+      "fields": {
+        "companyName": "string",
+        "tagline": "string",
+        "description": "text",
+        "foundedDate": "date",
+        "email": "email",
+        "phone": "string",
+        "address": "text",
+        "socialLinks": "json",
+        "stats": "json"
+      }
+    }
+  }
+}
