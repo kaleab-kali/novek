@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ExternalLink, ArrowRight } from "lucide-react"
-import { portfolioProjects } from "@/lib/data"
+import { portfolioProjects } from "../../lib/data"
 
 export default function PortfolioSection() {
   return (

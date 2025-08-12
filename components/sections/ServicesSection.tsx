@@ -1,7 +1,8 @@
 "use client"
 
 import { Code, Smartphone, Building, Palette, Search, Brain, BarChart3, Cloud } from 'lucide-react'
-import { services } from "@/lib/data"
+import { services } from "../../lib/data"
+import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, Key } from 'react'
 
 const iconMap = {
   Code,
@@ -47,7 +48,7 @@ export default function ServicesSection() {
                 <p className="text-sm md:text-base text-white/70 mb-3 md:mb-4">{service.description}</p>
 
                 <div className="space-y-1">
-                  {service.features.slice(0, 2).map((feature, idx) => (
+                  {service.features.slice(0, 2).map((feature: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined, idx: Key | null | undefined) => (
                     <div key={idx} className="text-xs md:text-sm text-blue-300">
                       • {feature}
                     </div>

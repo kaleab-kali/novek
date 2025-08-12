@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Calendar, User, ArrowRight, Clock } from "lucide-react"
-import { blogPosts } from "@/lib/data"
+import { blogPosts } from "../../lib/data"
 
 export default function BlogSection() {
   return (

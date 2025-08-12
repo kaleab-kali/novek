@@ -3,7 +3,8 @@
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight } from 'lucide-react'
-import { products } from "@/lib/data"
+import { products } from "../../lib/data"
+import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal, Key } from "react"
 
 export default function ProductsSection() {
   return (
@@ -39,7 +40,7 @@ export default function ProductsSection() {
 
               {/* Features */}
               <div className="flex flex-wrap gap-1 md:gap-2 mb-4">
-                {product.features.slice(0, 2).map((feature, idx) => (
+                {product.features.slice(0, 2).map((feature: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined, idx: Key | null | undefined) => (
                   <span key={idx} className="text-xs bg-blue-600/20 text-blue-300 px-2 py-1 rounded-full">
                     {feature}
                   </span>

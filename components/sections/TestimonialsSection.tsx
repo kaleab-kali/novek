@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { Star, Quote } from "lucide-react"
-import { testimonials } from "@/lib/data"
+import { testimonials } from "../../lib/data"
 
 export default function TestimonialsSection() {
   return (
