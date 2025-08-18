@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { createPortal } from "react-dom"
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
@@ -78,27 +79,39 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="lg:hidden fixed inset-0 top-0 bg-slate-900/95 backdrop-blur-md z-40">
-            <div className="flex flex-col items-center justify-center min-h-screen space-y-8 px-6">
+        {/* Custom Mobile Navigation Overlay */}
+        {isMenuOpen && typeof window !== "undefined" && createPortal(
+          <div className="lg:hidden fixed inset-0 z-[100] bg-slate-900/95 backdrop-blur-xl flex flex-col animate-fade-in">
+            <div className="flex justify-end p-6">
+              <button
+                aria-label="Close menu"
+                className="text-white bg-white/10 rounded-full p-2 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <X size={32} />
+              </button>
+            </div>
+            <nav className="flex flex-col items-center justify-center flex-1 space-y-8 px-8 pb-12">
               {navItems.map((item) => (
-                <Link
+                <button
                   key={item.name}
-                  href={item.href}
-                  className={`text-2xl font-semibold transition-colors duration-300 ${
-                    pathname === item.href ? "text-blue-400" : "text-white/80 hover:text-white"
+                  className={`text-2xl font-bold tracking-tight transition-colors duration-300 px-6 py-3 rounded-xl hover:bg-white/10 focus:bg-white/10 focus:outline-none ${
+                    pathname === item.href ? "text-blue-400" : "text-white/90 hover:text-white"
                   }`}
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    window.location.href = item.href;
+                  }}
                 >
                   {item.name}
-                </Link>
+                </button>
               ))}
-              <Link href="/contact" className="btn-primary text-lg px-8 py-4 mt-8" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/contact" className="btn-primary text-lg px-10 py-4 mt-8 rounded-xl shadow-lg" onClick={() => setIsMenuOpen(false)}>
                 Get Started
               </Link>
-            </div>
-          </div>
+            </nav>
+          </div>,
+          document.body
         )}
       </nav>
     </header>

@@ -1,8 +1,9 @@
 "use client"
 
 import { ArrowRight } from 'lucide-react'
-import TechSpaceScene from "../3d/TechSpaceScene"
-import  { SplashCursor} from "@/components/ui/splash-cursor"
+import dynamic from "next/dynamic"
+
+const SplashCursor = dynamic(() => import("@/components/ui/splash-cursor"), { ssr: false })
 
 export default function HeroSection() {
   const scrollToProducts = () => {
