@@ -299,19 +299,27 @@ export const teamMembers: TeamMember[] = [
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    name: "Emily Watson",
-    company: "TechCorp Inc.",
-    content: "NOVEK transformed our business with their innovative solutions. Outstanding results!",
+    name: "Kennedy",
+    company: "AfriTake Import & Export",
+    content: "Novek built our company website with a modern, professional look. The team was responsive and delivered exactly what we needed.",
     rating: 5,
-    image: "/professional-client-headshot.png",
+    // image: "/professional-client-headshot.png",
   },
   {
     id: "2",
-    name: "David Kim",
-    company: "StartupXYZ",
-    content: "The team at NOVEK delivered beyond our expectations. Highly recommended!",
+    name: "Bereket D",
+    company: "Zellion LLC",
+    content: "Novek developed our HR software and streamlined our DevOps processes. Their expertise and support were outstanding.",
     rating: 5,
-    image: "/professional-client-headshot.png",
+    // image: "/professional-client-headshot.png",
+  },
+  {
+    id: "3",
+    name: "Ezana M",
+    company: "Titan Industrial PLC",
+    content: "Novek delivered custom software for our operations. The solution was robust, scalable, and tailored to our needs.",
+    rating: 5,
+    // image: "/professional-client-headshot.png",
   },
 ]
 

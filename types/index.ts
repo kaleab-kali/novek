@@ -32,7 +32,7 @@ export interface Testimonial {
   company: string
   content: string
   rating: number
-  image: string
+  image?: string
 }
 
 export interface BlogPost {

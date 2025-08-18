@@ -46,13 +46,15 @@ export default function TestimonialsSection() {
               <p className="text-white/90 mb-6 text-base md:text-lg leading-relaxed">"{testimonial.content}"</p>
 
               <div className="flex items-center gap-4">
-                <Image
-                  src={testimonial.image || "/placeholder.svg"}
-                  alt={testimonial.name}
-                  width={60}
-                  height={60}
-                  className="rounded-full"
-                />
+                {testimonial.image && (
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    width={60}
+                    height={60}
+                    className="rounded-full"
+                  />
+                )}
                 <div>
                   <h4 className="font-semibold text-white">{testimonial.name}</h4>
                   <p className="text-blue-400">{testimonial.company}</p>
