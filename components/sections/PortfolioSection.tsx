@@ -11,7 +11,7 @@ export default function PortfolioSection() {
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="text-center mb-8 md:mb-16">
-          <h2 className="text-section-title bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent mb-4 md:mb-6">
+          <h2 className="text-section-title gradient-text mb-4 md:mb-6">
             Featured Projects
           </h2>
           <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto">

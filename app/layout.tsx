@@ -108,9 +108,9 @@ export default function RootLayout({
               logo: "https://novektech.com/images/novek-logo.png",
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+251946625060",
+                telephone: "+251987888646",
                 contactType: "customer service",
-                email: ["info@novektech.com", "kaleab@novektech.com"],
+                email: ["info@novektech.com"],
               },
               address: {
                 "@type": "PostalAddress",

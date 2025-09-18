@@ -68,8 +68,8 @@ export default function PrivacyPage() {
               If you have any questions about this Privacy Policy, please contact us at:
             </p>
             <div className="space-y-2 text-white/70">
-              <p>Email: info@novektech.com, kaleab@novektech.com</p>
-              <p>Phone: +251946625060</p>
+              <p>Email: info@novektech.com</p>
+              <p>Phone: +251987888646</p>
               <p>Address: 4th floor lem hotel building, megnagna, addis ababa, ethiopia</p>
             </div>
           </div>

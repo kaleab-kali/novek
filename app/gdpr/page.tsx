@@ -68,8 +68,8 @@ export default function GDPRPage() {
               To exercise any of your GDPR rights, please contact our Data Protection Officer:
             </p>
             <div className="space-y-2 text-white/70 mb-6">
-              <p>Email: info@novektech.com, kaleab@novektech.com</p>
-              <p>Phone: +251946625060</p>
+              <p>Email: info@novektech.com</p>
+              <p>Phone: +251987888646</p>
               <p>Address: 4th floor lem hotel building, megnagna, addis ababa, ethiopia</p>
             </div>
             <button className="btn-primary">

@@ -68,8 +68,8 @@ export default function TermsPage() {
               For questions about these terms, please contact our legal team:
             </p>
             <div className="space-y-2 text-white/70">
-              <p>Email: info@novektech.com, kaleab@novektech.com</p>
-              <p>Phone: +251946625060</p>
+              <p>Email: info@novektech.com</p>
+              <p>Phone: +251987888646</p>
               <p>Address: 4th floor lem hotel building, megnagna, addis ababa, ethiopia</p>
             </div>
           </div>

@@ -63,7 +63,7 @@ export default function StatsSection() {
           className="text-center mb-8 md:mb-16"
         >
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-white">
-            <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+            <span className="gradient-text">
               Our Impact in Numbers
             </span>
           </h2>
@@ -80,7 +80,7 @@ export default function StatsSection() {
               className="text-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 md:p-8 hover:bg-white/20 transition-all duration-300"
             >
               <div className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 text-white">
-                <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+                <span className="gradient-text">
                   {counts[stat.key as keyof typeof counts]}
                   {stat.suffix}
                 </span>

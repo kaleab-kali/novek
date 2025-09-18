@@ -12,7 +12,7 @@ export default function BlogSection() {
         {/* Section Header */}
         <div className="text-center mb-8 md:mb-16">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-white">
-            <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+            <span className="gradient-text">
               Latest Insights
             </span>
           </h2>

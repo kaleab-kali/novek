@@ -8,14 +8,14 @@ export default function ContactSection() {
     {
       icon: Mail,
       title: "Email Us",
-      content: "info@novektech.com, kaleab@novektech.com",
+      content: "info@novektech.com",
       link: "mailto:info@novektech.com",
     },
     {
       icon: Phone,
       title: "Call Us",
-      content: "+251946625060",
-      link: "tel:+251946625060",
+      content: "+251987888646",
+      link: "tel:+251987888646",
     },
     {
       icon: MapPin,

@@ -25,7 +25,7 @@ export default function TechnologySection() {
           className="text-center mb-8 md:mb-16"
         >
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-white">
-            <span className="bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent">
+            <span className="gradient-text">
               Technologies We Master
             </span>
           </h2>
@@ -34,7 +34,7 @@ export default function TechnologySection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 md:gap-8">
           {technologies.map((tech, index) => (
             <motion.div
               key={tech.name}
@@ -42,19 +42,22 @@ export default function TechnologySection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -10, scale: 1.1 }}
-              className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 text-center group hover:bg-white/20 transition-all duration-300"
+              whileHover={{ y: -8, scale: 1.05 }}
+              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center group hover:bg-white/15 hover:border-white/20 transition-all duration-500 hover:shadow-xl hover:shadow-blue-500/10"
             >
-              <div className="w-12 h-12 mx-auto mb-3 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform overflow-hidden">
+              <div className="relative w-16 h-16 mx-auto mb-4 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 overflow-hidden bg-gradient-to-br from-white/10 to-white/5">
                 <Image
-                  src={tech.logo || "/placeholder.svg?height=32&width=32"}
+                  src={tech.logo || "/placeholder.svg?height=48&width=48"}
                   alt={tech.name}
-                  width={32}
-                  height={32}
-                  className="w-8 h-8 object-contain"
+                  width={48}
+                  height={48}
+                  className="w-10 h-10 object-contain filter brightness-90 group-hover:brightness-110 transition-all duration-300"
                 />
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-br opacity-0 group-hover:opacity-20 transition-opacity duration-300" style={{
+                  background: `linear-gradient(135deg, ${tech.color.includes('blue-400') ? '#60a5fa' : tech.color.includes('gray-800') ? '#1f2937' : tech.color.includes('green-600') ? '#16a34a' : tech.color.includes('yellow-500') ? '#eab308' : tech.color.includes('orange-500') ? '#f97316' : '#60a5fa'}, ${tech.color.includes('cyan-400') ? '#22d3ee' : tech.color.includes('gray-600') ? '#4b5563' : tech.color.includes('green-400') ? '#4ade80' : tech.color.includes('blue-500') ? '#3b82f6' : tech.color.includes('yellow-400') ? '#facc15' : tech.color.includes('cyan-300') ? '#67e8f9' : '#22d3ee'})`
+                }} />
               </div>
-              <p className="text-sm text-white font-medium">{tech.name}</p>
+              <p className="text-sm font-semibold text-white/90 group-hover:text-white transition-colors duration-300">{tech.name}</p>
             </motion.div>
           ))}
         </div>
