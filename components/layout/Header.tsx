@@ -39,7 +39,7 @@ export default function Header() {
       <nav className="container mx-auto flex flex-col items-center justify-center">
   <div className="w-full flex flex-col items-center justify-center py-1 md:py-2">
           {/* One-line header with split menu */}
-          <div className="relative w-full flex items-center justify-center">
+          <div className="relative w-full flex items-center justify-start lg:justify-center">
             {/* Blur background for menu only, always visible. Add contrast when scrolled. */}
             <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 z-0 hidden lg:block">
               {isScrolled ? (
@@ -48,6 +48,15 @@ export default function Header() {
                 <div className="mx-auto w-3/4 h-12 rounded-full bg-slate-900/70"></div>
               )}
              <div className="mx-auto w-3/4 h-12 blur-gradient absolute top-0 left-0 right-0"></div>
+            </div>
+            {/* Mobile blur background */}
+            <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 z-0 lg:hidden">
+              {isScrolled ? (
+                <div className="mx-auto w-full h-12 rounded-full bg-slate-900/80"></div>
+              ) : (
+                <div className="mx-auto w-full h-12 rounded-full bg-slate-900/60"></div>
+              )}
+             <div className="mx-auto w-full h-12 blur-gradient absolute top-0 left-0 right-0"></div>
             </div>
             {/* Left menu */}
             <div className="hidden lg:flex flex-1 justify-end gap-6 z-10">
@@ -93,7 +102,7 @@ export default function Header() {
             </div>
           </div>
           {/* Mobile Menu Button top right */}
-          <div className="lg:hidden absolute top-4 right-4">
+          <div className="lg:hidden absolute top-1/2 -translate-y-1/2 right-4">
             <button
               className="text-white p-2 z-50 relative rounded-lg border border-white/20 bg-white/10 hover:bg-white/20"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
