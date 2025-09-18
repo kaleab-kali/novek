@@ -3,7 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Target, Eye, Award, Users, ArrowRight, Rocket, Lightbulb, Trophy } from 'lucide-react'
 import Header from "components/layout/Header"
-import { teamMembers } from "lib/data"
+// import { teamMembers } from "lib/data"
 import Footer from "components/layout/Footer"
 
 
@@ -142,7 +142,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-12 md:py-20">
+      {/* <section className="py-12 md:py-20">
         <div className="container mx-auto">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold gradient-text mb-6">
@@ -174,7 +174,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-12 md:py-20 bg-slate-800/30">

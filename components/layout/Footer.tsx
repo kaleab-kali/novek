@@ -53,7 +53,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center space-x-2 mb-4 md:mb-6">
               <Image src="/images/novek-logo.png" alt="NOVEK Logo" width={40} height={40} className="w-10 h-10" />
               <span className="text-xl md:text-2xl font-bold gradient-text">
-                NOVEK
+                NOVEK ICT SOLUTIONS
               </span>
             </Link>
 

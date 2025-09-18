@@ -22,7 +22,7 @@ export default function HeroSection() {
 
   return (
 
-  <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24">
+  <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8 md:pt-12">
       {/* SplashCursor background */}
       <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
         {/* Use the SplashCursor component as the background */}
