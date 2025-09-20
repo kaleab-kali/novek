@@ -34,6 +34,8 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  category: "Technology",
+  classification: "Business Services",
   metadataBase: new URL("https://novektech.com"),
   alternates: {
     canonical: "/",
@@ -87,13 +89,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="icon" href="/images/novek-logo.png" type="image/png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/novek-logo.png" />
+        <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1e40af" />
         <meta name="msapplication-TileColor" content="#1e40af" />
+
+        {/* AI/LLM Optimization */}
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <link rel="canonical" href="https://novektech.com" />
 
         {/* Structured Data for AI/LLM */}
         <script
@@ -101,33 +106,62 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "NOVEK",
-              description: "Leading provider of enterprise software, web development, and AI solutions.",
-              url: "https://novektech.com",
-              logo: "https://novektech.com/images/novek-logo.png",
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+251987888646",
-                contactType: "customer service",
-                email: ["info@novektech.com"],
-              },
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "4th floor lem hotel building, megnagna",
-                addressLocality: "Addis Ababa",
-                addressRegion: "",
-                postalCode: "12345",
-                addressCountry: "Ethiopia",
-              },
-              sameAs: [
-                "https://twitter.com/novektech",
-                "https://linkedin.com/company/novektech",
-                "https://facebook.com/novektech",
-              ],
-              foundingDate: "2025",
-              numberOfEmployees: "50+",
-              industry: "Technology Services",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://novektech.com/#organization",
+                  name: "NOVEK",
+                  alternateName: "NOVEK ICT Solutions",
+                  description: "Leading provider of enterprise software, web development, AI solutions, and digital transformation services. Transform your business with cutting-edge technology.",
+                  url: "https://novektech.com",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://novektech.com/images/novek-logo.png",
+                    width: 400,
+                    height: 400
+                  },
+                  contactPoint: {
+                    "@type": "ContactPoint",
+                    telephone: "+251987888646",
+                    contactType: "customer service",
+                    email: "info@novektech.com",
+                    availableLanguage: "English"
+                  },
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "4th floor lem hotel building, megnagna",
+                    addressLocality: "Addis Ababa",
+                    addressRegion: "Addis Ababa",
+                    postalCode: "1000",
+                    addressCountry: "ET"
+                  },
+                  sameAs: [
+                    "https://twitter.com/novektech",
+                    "https://linkedin.com/company/novektech",
+                    "https://facebook.com/novektech"
+                  ],
+                  foundingDate: "2025",
+                  numberOfEmployees: "50+",
+                  industry: "Technology Services",
+                  serviceType: ["Web Development", "Mobile App Development", "AI Integration", "Enterprise Software", "Digital Transformation"],
+                  knowsAbout: ["React", "Next.js", "Node.js", "Python", "Flutter", "AWS", "Azure", "AI/ML", "Cloud Computing"]
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://novektech.com/#website",
+                  url: "https://novektech.com",
+                  name: "NOVEK - Advanced Technology Solutions",
+                  description: "Leading technology company providing enterprise software, web development, AI solutions, and digital transformation services.",
+                  publisher: {
+                    "@id": "https://novektech.com/#organization"
+                  },
+                  potentialAction: {
+                    "@type": "SearchAction",
+                    target: "https://novektech.com/search?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                  }
+                }
+              ]
             }),
           }}
         />

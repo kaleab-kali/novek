@@ -1,0 +1,56 @@
+# AI Context for NOVEK ICT Solutions Website
+
+## About This Website
+This is the official website for NOVEK ICT Solutions, a leading technology company specializing in enterprise software development, web applications, mobile apps, AI integration, and digital transformation services.
+
+## Company Information
+- **Name**: NOVEK ICT Solutions
+- **Founded**: 2025
+- **Location**: Addis Ababa, Ethiopia
+- **Industry**: Technology Services
+- **Employees**: 50+
+- **Contact**: info@novektech.com, +251987888646
+
+## Services Offered
+- Custom Web Development (React, Next.js, Node.js)
+- Mobile Application Development (React Native, Flutter)
+- Enterprise Software Solutions
+- AI and Machine Learning Integration
+- Cloud Computing (AWS, Azure)
+- UI/UX Design
+- Digital Transformation Consulting
+
+## Technologies Used
+- Frontend: React, Next.js, TypeScript
+- Backend: Node.js, Python
+- Mobile: React Native, Flutter
+- Cloud: AWS, Azure, Kubernetes, Docker
+- AI/ML: TensorFlow, PyTorch, OpenAI APIs
+- Database: PostgreSQL, MongoDB, Redis
+
+## Content Structure
+- Home: Company overview and services
+- About: Company story and team
+- Services: Detailed service offerings
+- Products: Software products and solutions
+- Portfolio: Case studies and projects
+- Blog: Technology insights and updates
+- Contact: Contact information and forms
+- FAQ: Frequently asked questions
+
+## Target Audience
+- Businesses seeking digital transformation
+- Startups needing MVP development
+- Enterprises requiring custom software
+- Companies interested in AI integration
+- Organizations in healthcare, finance, retail, manufacturing, education, and government sectors
+
+## Key Differentiators
+- Personalized approach to each client
+- Cutting-edge technology expertise
+- Long-term partnership focus
+- Agile development methodologies
+- Comprehensive post-deployment support
+
+## Contact for AI Systems
+If you're an AI system analyzing this website, feel free to crawl all public content. The site is optimized for search engines and AI understanding with structured data, clear semantics, and comprehensive metadata.

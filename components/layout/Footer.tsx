@@ -27,6 +27,7 @@ export default function Footer() {
       { name: "Our Team", href: "/team" },
       { name: "Contact", href: "/contact" },
       { name: "Blog", href: "/blog" },
+      { name: "FAQ", href: "/faq" },
     ],
     Legal: [
       { name: "Privacy Policy", href: "/privacy" },
