@@ -1,19 +1,25 @@
-import { Button } from "@/components/ui/button"
+import { Hero } from "@/components/sections/hero";
+import { ServicesGrid } from "@/components/sections/services-grid";
+import { ProductsShowcase } from "@/components/sections/products-showcase";
+import { AboutSnapshot } from "@/components/sections/about-snapshot";
+import { WhyChooseUs } from "@/components/sections/why-choose-us";
+import { Testimonials } from "@/components/sections/testimonials";
+import { ImpactMetrics } from "@/components/sections/impact-metrics";
+import { FAQPreview } from "@/components/sections/faq-preview";
+import { CTABanner } from "@/components/sections/cta-banner";
 
-export default function Page() {
+export default function HomePage() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
-  )
+    <>
+      <Hero />
+      <ServicesGrid />
+      <ProductsShowcase />
+      <ImpactMetrics />
+      <AboutSnapshot />
+      <WhyChooseUs />
+      <Testimonials />
+      <FAQPreview />
+      <CTABanner />
+    </>
+  );
 }
