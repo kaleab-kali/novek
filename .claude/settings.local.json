@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm add:*)",
+      "Bash(pnpm dlx:*)",
+      "Bash(pnpm build:*)",
+      "Bash(node -e \"const icons = require\\(''lucide-react''\\); const social = [''Linkedin'',''Github'',''Facebook'',''Instagram'',''Twitter'',''Globe'',''Mail'',''Phone'',''MapPin'',''Send'',''ExternalLink'',''Link2'']; social.forEach\\(n => console.log\\(n, '':'', typeof icons[n] === ''undefined'' ? ''MISSING'' : ''OK''\\)\\);\")",
+      "Bash(node -e \"const icons = Object.keys\\(require\\(''lucide-react''\\)\\); const matches = icons.filter\\(n => /linke|github|face|insta|twit/i.test\\(n\\)\\); console.log\\(matches.join\\(''\\\\n''\\)\\);\")",
+      "mcp__plugin_context7_context7__resolve-library-id",
+      "mcp__plugin_context7_context7__query-docs",
+      "Bash(timeout 90 bash -c 'while [ ! -d \"\"node_modules/@icons-pack/react-simple-icons\"\" ]; do sleep 2; done; echo \"\"INSTALLED\"\"')",
+      "Bash(npx next:*)",
+      "Bash(node -e \"const m = require\\(''@icons-pack/react-simple-icons''\\); const names = Object.keys\\(m\\).filter\\(k => /linkedin|github|facebook|instagram|^Si[XxTt]/i.test\\(k\\)\\).slice\\(0,20\\); console.log\\(names.join\\(''\\\\n''\\)\\);\")",
+      "Bash(node -e \"const m = require\\(''@icons-pack/react-simple-icons''\\); console.log\\(''SiLinkedin:'', typeof m.SiLinkedin\\); console.log\\(''SiX:'', typeof m.SiX\\);\")",
+      "Bash(node -e \"const m = require\\(''@icons-pack/react-simple-icons''\\); const names = Object.keys\\(m\\).filter\\(k => /linked/i.test\\(k\\)\\); console.log\\(names.join\\(''\\\\n''\\)\\);\")",
+      "Bash(node -e \"const m = require\\(''@icons-pack/react-simple-icons''\\); const names = Object.keys\\(m\\).filter\\(k => /^SiX/i.test\\(k\\)\\).slice\\(0,10\\); console.log\\(names.join\\(''\\\\n''\\)\\);\")",
+      "Bash(node -e \"const m = require\\(''@icons-pack/react-simple-icons''\\); const names = Object.keys\\(m\\).filter\\(k => /linke/i.test\\(k\\)\\); console.log\\(names.join\\(''\\\\n''\\)\\);\")",
+      "Bash(node -e \"const m = require\\(''@icons-pack/react-simple-icons''\\); console.log\\(''total exports:'', Object.keys\\(m\\).length\\); const names = Object.keys\\(m\\).filter\\(k => !k.endsWith\\(''Hex''\\)\\).filter\\(k => /^Si[A-Z]/\\).slice\\(0,5\\); console.log\\(''sample:'', names\\);\")",
+      "Bash(node -e \"const m = require\\(''@icons-pack/react-simple-icons''\\); const names = Object.keys\\(m\\).filter\\(k => k === ''SiFacebook'' || k === ''SiGithub'' || k === ''SiInstagram'' || k === ''SiX''\\); names.forEach\\(n => console.log\\(n, typeof m[n]\\)\\);\")",
+      "Bash(node -e \"const m = require\\(''@icons-pack/react-simple-icons''\\); const k = Object.keys\\(m\\).filter\\(n => n.startsWith\\(''Si''\\) && n.toLowerCase\\(\\).includes\\(''in''\\)\\).slice\\(0,20\\); console.log\\(k.join\\(''\\\\n''\\)\\);\")",
+      "Bash(pnpm remove:*)",
+      "Bash(pnpm dev:*)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3005)",
+      "mcp__Claude_Preview__preview_start",
+      "WebSearch",
+      "WebFetch(domain:www.925studios.co)",
+      "WebFetch(domain:blog.logrocket.com)",
+      "Bash(for f:*)",
+      "Bash(do sed:*)",
+      "Bash(echo \"fixed $f\")",
+      "Bash(done)",
+      "WebFetch(domain:novektech.com)",
+      "Bash(node -e \":*)",
+      "Bash(gh pr:*)"
+    ]
+  }
+}
