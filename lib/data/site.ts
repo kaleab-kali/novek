@@ -4,7 +4,7 @@ export const siteConfig: SiteConfig = {
   name: "NOVEK ICT Solutions",
   description:
     "NOVEK ICT Solutions is Ethiopia's leading custom software development company, based in Addis Ababa. We build enterprise platforms, ERP systems, AI-powered solutions, tax intelligence software, hospitality management systems, and SaaS products for businesses across Africa.",
-  url: "https://novektech.com",
+  url: "https://www.novektech.com",
   ogImage: "/og/default-og.png",
   email: "info@novektech.com",
   phone: "+251987888646",
