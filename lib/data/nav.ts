@@ -37,7 +37,7 @@ export const navigation: NavItem[] = [
       },
       {
         label: "Digital Consulting",
-        href: "/services/digital-consulting",
+        href: "/services/consulting",
         description: "Strategic guidance for your digital transformation journey",
         icon: "Lightbulb",
       },
@@ -55,7 +55,7 @@ export const navigation: NavItem[] = [
       },
       {
         label: "Restaurant Management",
-        href: "/products/restaurant-management",
+        href: "/products/restaurant-management-system",
         description: "End-to-end operations for restaurants and food service",
         icon: "UtensilsCrossed",
       },
@@ -67,7 +67,7 @@ export const navigation: NavItem[] = [
       },
       {
         label: "Property Management",
-        href: "/products/property-management",
+        href: "/products/property-management-system",
         description: "Streamline real estate operations and tenant relations",
         icon: "Building",
       },
@@ -85,7 +85,7 @@ export const navigation: NavItem[] = [
       },
       {
         label: "Hospitality Management",
-        href: "/products/hospitality-management",
+        href: "/products/hospitality-management-system",
         description: "Complete hotel and hospitality operations platform",
         icon: "Hotel",
       },
@@ -102,8 +102,8 @@ export const navigation: NavItem[] = [
     href: "/projects",
   },
   {
-    label: "Insights",
-    href: "/blog",
+    label: "FAQ",
+    href: "/faq",
   },
   {
     label: "About",

@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/data/site";
 import { services } from "@/lib/data/services";
 import { products } from "@/lib/data/products";
+import { projects } from "@/lib/data/projects";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -89,5 +90,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...serviceRoutes, ...productRoutes];
+  const projectRoutes: MetadataRoute.Sitemap = [
+    {
+      url: `${siteConfig.url}/projects`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    ...projects.map((p) => ({
+      url: `${siteConfig.url}/projects/${p.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+  ];
+
+  return [...staticRoutes, ...serviceRoutes, ...productRoutes, ...projectRoutes];
 }
