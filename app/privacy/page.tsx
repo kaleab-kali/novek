@@ -88,7 +88,7 @@ const PrivacyPage = () => {
                 You have the right to access, correct, or delete your personal
                 information. You may also opt out of marketing communications at
                 any time. To exercise these rights, contact us at
-                privacy@novektech.com.
+                privacy@novek.et.
               </p>
             </section>
 
@@ -115,7 +115,7 @@ const PrivacyPage = () => {
                 <br />
                 Addis Ababa, Ethiopia
                 <br />
-                privacy@novektech.com
+                privacy@novek.et
               </p>
             </section>
           </div>

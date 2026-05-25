@@ -102,6 +102,14 @@ export const navigation: NavItem[] = [
     href: "/projects",
   },
   {
+    label: "Why NOVEK",
+    href: "/why-novek",
+  },
+  {
+    label: "Industries",
+    href: "/industries",
+  },
+  {
     label: "FAQ",
     href: "/faq",
   },

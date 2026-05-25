@@ -25,7 +25,6 @@ export function BlogCard({
   excerpt,
   readingTime,
   slug,
-  image,
   className,
 }: BlogCardProps) {
   return (
@@ -39,7 +38,7 @@ export function BlogCard({
         className,
       )}
     >
-      <Link href={`/blog/${slug}`} className="block">
+      <Link href={`/projects/${slug}`} className="block">
         {/* Image placeholder */}
         <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#131D35]">
           <div className="absolute inset-0 bg-[#0A0F1E]/60" />

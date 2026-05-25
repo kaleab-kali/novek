@@ -23,7 +23,6 @@ export function AnimatedCounter({ value, label, className }: AnimatedCounterProp
   useEffect(() => {
     if (!isInView) return;
 
-    let start = 0;
     const duration = 1500;
     const startTime = performance.now();
 

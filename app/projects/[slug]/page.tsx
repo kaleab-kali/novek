@@ -3,8 +3,13 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ArrowRight, ChevronRight, CheckCircle2 } from "lucide-react";
 
-import { generatePageMetadata } from "@/lib/seo";
+import {
+  breadcrumbJsonLd,
+  generateJsonLd,
+  generatePageMetadata,
+} from "@/lib/seo";
 import { projects } from "@/lib/data/projects";
+import { siteConfig } from "@/lib/data/site";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -35,9 +40,39 @@ const ProjectDetailPage = async ({ params }: PageProps) => {
   const relatedProjects = projects.filter((item) =>
     project.relatedProjects.includes(item.slug),
   );
+  const structuredData = [
+    breadcrumbJsonLd([
+      { name: "Home", href: "/" },
+      { name: "Projects", href: "/projects" },
+      { name: project.name, href: `/projects/${project.slug}` },
+    ]),
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      name: project.name,
+      headline: `${project.name} case study`,
+      description: project.shortDescription,
+      url: `${siteConfig.url}/projects/${project.slug}`,
+      creator: {
+        "@type": "Organization",
+        name: siteConfig.name,
+        url: siteConfig.url,
+      },
+      about: project.tags,
+      audience: {
+        "@type": "BusinessAudience",
+        audienceType: project.industry,
+      },
+    },
+  ];
 
   return (
     <main className="pt-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={generateJsonLd(structuredData)}
+      />
+
       <div className="container-custom mb-8">
         <nav className="flex items-center gap-2 text-sm text-[--text-tertiary]">
           <Link href="/" className="transition-colors hover:text-white">

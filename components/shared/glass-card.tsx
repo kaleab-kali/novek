@@ -18,7 +18,6 @@ export function GlassCard({
   className,
   hover = true,
   glow = false,
-  tilt = false,
 }: GlassCardProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [glowPosition, setGlowPosition] = useState({ x: 0, y: 0 });

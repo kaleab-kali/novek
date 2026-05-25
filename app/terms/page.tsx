@@ -47,7 +47,7 @@ export default function TermsPage() {
           Contact
         </h2>
         <p>
-          For questions about these terms, contact us at info@novektech.com.
+          For questions about these terms, contact us at info@novek.et.
         </p>
       </div>
     </div>

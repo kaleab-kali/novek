@@ -45,7 +45,7 @@ export default function CookiePolicyPage() {
           Contact
         </h2>
         <p>
-          For questions about our cookie policy, contact us at info@novektech.com.
+          For questions about our cookie policy, contact us at info@novek.et.
         </p>
       </div>
     </div>
