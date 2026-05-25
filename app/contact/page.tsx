@@ -1,4 +1,5 @@
 import { generatePageMetadata } from "@/lib/seo";
+import { siteConfig } from "@/lib/data/site";
 import { ContactForm } from "@/components/shared/contact-form";
 import { Mail, Phone, MapPin } from "lucide-react";
 
@@ -29,11 +30,11 @@ export default function ContactPage() {
             </h2>
             <div className="space-y-4">
               <a
-                href="mailto:info@novektech.com"
+                href={`mailto:${siteConfig.email}`}
                 className="flex items-center gap-3 text-[13px] text-[#9A9590] transition-colors hover:text-[#E8E4DC]"
               >
                 <Mail className="h-4 w-4 text-[#C9A96E]" />
-                info@novektech.com
+                {siteConfig.email}
               </a>
               <a
                 href="tel:+251987888646"

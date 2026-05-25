@@ -171,7 +171,7 @@ export const faqItems: FAQItem[] = [
   {
     question: "How can I reach NOVEK for support?",
     answer:
-      "You can reach our support team via email at support@novektech.com, by phone at +251 911 000 000, or through the support portal in your project dashboard. For clients on maintenance plans, we offer priority Slack or Microsoft Teams channels with guaranteed response times.",
+      "You can reach our support team via email at support@novek.et, by phone at +251 987 888 646, or through the support portal in your project dashboard. For clients on maintenance plans, we offer priority Slack or Microsoft Teams channels with guaranteed response times.",
     category: "support",
   },
   {

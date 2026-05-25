@@ -1,7 +1,13 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { generatePageMetadata } from "@/lib/seo";
+import {
+  breadcrumbJsonLd,
+  faqJsonLd,
+  generateJsonLd,
+  generatePageMetadata,
+  serviceJsonLd,
+} from "@/lib/seo";
 import { services } from "@/lib/data/services";
 import { FAQAccordion } from "@/components/shared/faq-accordion";
 import {
@@ -120,9 +126,36 @@ const ServiceDetailPage = async ({ params }: PageProps) => {
   if (!service) notFound();
 
   const ServiceIcon = ICON_MAP[service.icon];
+  const structuredData = [
+    breadcrumbJsonLd([
+      { name: "Home", href: "/" },
+      { name: "Services", href: "/services" },
+      { name: service.name, href: `/services/${service.slug}` },
+    ]),
+    serviceJsonLd({
+      name: service.name,
+      description: service.shortDescription,
+      slug: service.slug,
+    }),
+    ...(service.faq.length > 0
+      ? [
+          faqJsonLd(
+            service.faq.map((item) => ({
+              question: item.question,
+              answer: item.answer,
+            })),
+          ),
+        ]
+      : []),
+  ];
 
   return (
     <main className="pt-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={generateJsonLd(structuredData)}
+      />
+
       {/* Breadcrumb */}
       <div className="container-custom mb-8">
         <nav className="flex items-center gap-2 text-sm text-[--text-tertiary]">
@@ -235,6 +268,11 @@ const ServiceDetailPage = async ({ params }: PageProps) => {
               const StepIcon = ICON_MAP[step.icon];
               return (
                 <div key={step.number} className="relative">
+                  {StepIcon && (
+                    <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-[--gold-dim]">
+                      <StepIcon className="h-4 w-4 text-[--gold]" />
+                    </div>
+                  )}
                   <span className="mb-3 block font-heading text-3xl font-bold text-[--gold] opacity-30">
                     {String(step.number).padStart(2, "0")}
                   </span>

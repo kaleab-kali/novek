@@ -3,64 +3,76 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/:path*",
-        has: [{ type: "host", value: "novektech.com" }],
-        destination: "https://www.novektech.com/:path*",
-        permanent: true,
-      },
-      {
         source: "/cookies",
-        destination: "/cookie-policy",
+        destination: "https://novek.et/cookie-policy",
         permanent: true,
       },
       {
         source: "/blog",
-        destination: "/projects",
+        destination: "https://novek.et/projects",
         permanent: true,
       },
       {
         source: "/portfolio",
-        destination: "/projects",
+        destination: "https://novek.et/projects",
         permanent: true,
       },
       {
         source: "/portfolio/:path*",
-        destination: "/projects/:path*",
+        destination: "https://novek.et/projects/:path*",
         permanent: true,
       },
       {
         source: "/products/crm-tools",
-        destination: "/products/novek-crm",
+        destination: "https://novek.et/products/novek-crm",
         permanent: true,
       },
       {
         source: "/products/luxury-websites",
-        destination: "/services/luxury-website-design",
+        destination: "https://novek.et/services/luxury-website-design",
         permanent: true,
       },
       {
         source: "/products/restaurant-management",
-        destination: "/products/restaurant-management-system",
+        destination: "https://novek.et/products/restaurant-management-system",
         permanent: true,
       },
       {
         source: "/products/property-management",
-        destination: "/products/property-management-system",
+        destination: "https://novek.et/products/property-management-system",
         permanent: true,
       },
       {
         source: "/products/hospitality-management",
-        destination: "/products/hospitality-management-system",
+        destination: "https://novek.et/products/hospitality-management-system",
         permanent: true,
       },
       {
         source: "/services/digital-consulting",
-        destination: "/services/consulting",
+        destination: "https://novek.et/services/consulting",
         permanent: true,
       },
       {
         source: "/services/enterprise-systems",
-        destination: "/services/custom-software-development",
+        destination: "https://novek.et/services/custom-software-development",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "novektech.com" }],
+        destination: "https://novek.et/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.novektech.com" }],
+        destination: "https://novek.et/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.novek.et" }],
+        destination: "https://novek.et/:path*",
         permanent: true,
       },
     ];

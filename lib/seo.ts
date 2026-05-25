@@ -49,7 +49,7 @@ export function generatePageMetadata({
   };
 }
 
-export function generateJsonLd(data: Record<string, unknown>) {
+export function generateJsonLd(data: unknown) {
   return {
     __html: JSON.stringify(data),
   };
@@ -137,6 +137,45 @@ export function serviceJsonLd(service: {
       name: siteConfig.name,
     },
     url: `${siteConfig.url}/services/${service.slug}`,
+  };
+}
+
+export function professionalServiceJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: siteConfig.name,
+    alternateName: "NOVEK",
+    url: siteConfig.url,
+    image: `${siteConfig.url}/og/default-og.png`,
+    logo: `${siteConfig.url}/logo1.png`,
+    description: siteConfig.description,
+    email: siteConfig.email,
+    telephone: siteConfig.phone,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "4th Floor, Lem Hotel Building, Megnagna",
+      addressLocality: "Addis Ababa",
+      addressCountry: "ET",
+    },
+    areaServed: [
+      { "@type": "Country", name: "Ethiopia" },
+      { "@type": "Place", name: "East Africa" },
+      { "@type": "Place", name: "Africa" },
+    ],
+    knowsAbout: [
+      "custom software development",
+      "AI integration",
+      "ERP software",
+      "CRM software",
+      "hospitality management software",
+      "tax intelligence software",
+      "restaurant management systems",
+      "property management systems",
+      "digital transformation",
+      "Next.js web development",
+    ],
+    sameAs: Object.values(siteConfig.social),
   };
 }
 

@@ -12,8 +12,9 @@ import { useScrollDirection } from "@/hooks/use-scroll-direction";
 const NAV_LINKS = [
   { label: "Services", href: "/services" },
   { label: "Products", href: "/products" },
+  { label: "Projects", href: "/projects" },
+  { label: "Why NOVEK", href: "/why-novek" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
 ];
 
 export function Navbar() {
@@ -23,10 +24,6 @@ export function Navbar() {
 
   const isScrolled = scrollY > 20;
   const isHidden = scrollDirection === "down" && scrollY > 200;
-
-  useEffect(() => {
-    setMobileOpen(false);
-  }, [pathname]);
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
@@ -122,8 +119,10 @@ export function Navbar() {
               <div className="space-y-1">
                 {[
                   ...NAV_LINKS,
+                  { label: "Industries", href: "/industries" },
                   { label: "FAQ", href: "/faq" },
                   { label: "Careers", href: "/careers" },
+                  { label: "Contact", href: "/contact" },
                 ].map((link) => (
                   <Link
                     key={link.href}

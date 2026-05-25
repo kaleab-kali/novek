@@ -53,7 +53,7 @@ const CareersPage = () => {
                     </div>
                   </div>
                   <Link
-                    href={`mailto:careers@novektech.com?subject=Application: ${job.title}`}
+                    href={`mailto:careers@novek.et?subject=Application: ${job.title}`}
                     className="inline-flex shrink-0 items-center gap-2 rounded-lg border border-[--gold] px-4 py-2 text-sm font-medium text-[--gold] transition-colors hover:bg-[--gold] hover:text-[--navy-950]"
                   >
                     Apply
@@ -98,7 +98,7 @@ const CareersPage = () => {
               tell us what you are passionate about.
             </p>
             <a
-              href="mailto:careers@novektech.com?subject=General Application"
+              href="mailto:careers@novek.et?subject=General Application"
               className="inline-flex items-center gap-2 text-sm font-medium text-[--gold] transition-colors hover:text-[--gold-light]"
             >
               Send a general application

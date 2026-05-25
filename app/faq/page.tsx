@@ -1,5 +1,6 @@
 import { generatePageMetadata, faqJsonLd, generateJsonLd } from "@/lib/seo";
 import { faqItems } from "@/lib/data/faq";
+import { answerEngineQuestions } from "@/lib/data/answer-engine";
 import { FAQAccordion } from "@/components/shared/faq-accordion";
 
 export const metadata = generatePageMetadata({
@@ -28,14 +29,16 @@ const CATEGORY_ORDER = [
 ] as const;
 
 const FAQPage = () => {
+  const allFaqItems = [...answerEngineQuestions, ...faqItems];
+
   const grouped = CATEGORY_ORDER.map((category) => ({
     category,
     label: CATEGORY_LABELS[category] ?? category,
-    items: faqItems.filter((item) => item.category === category),
+    items: allFaqItems.filter((item) => item.category === category),
   })).filter((group) => group.items.length > 0);
 
   const faqStructuredData = faqJsonLd(
-    faqItems.map((item) => ({
+    allFaqItems.map((item) => ({
       question: item.question,
       answer: item.answer,
     })),

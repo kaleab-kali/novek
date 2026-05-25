@@ -1,8 +1,14 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { generatePageMetadata } from "@/lib/seo";
+import {
+  breadcrumbJsonLd,
+  faqJsonLd,
+  generateJsonLd,
+  generatePageMetadata,
+} from "@/lib/seo";
 import { products } from "@/lib/data/products";
+import { siteConfig } from "@/lib/data/site";
 import { FAQAccordion } from "@/components/shared/faq-accordion";
 import { ArrowRight, ChevronRight, CheckCircle2 } from "lucide-react";
 
@@ -31,8 +37,46 @@ const ProductDetailPage = async ({ params }: PageProps) => {
   const product = products.find((p) => p.slug === slug);
   if (!product) notFound();
 
+  const structuredData = [
+    breadcrumbJsonLd([
+      { name: "Home", href: "/" },
+      { name: "Products", href: "/products" },
+      { name: product.name, href: `/products/${product.slug}` },
+    ]),
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      name: product.name,
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web",
+      description: product.shortDescription,
+      url: `${siteConfig.url}/products/${product.slug}`,
+      provider: {
+        "@type": "Organization",
+        name: siteConfig.name,
+        url: siteConfig.url,
+      },
+      featureList: product.features.map((feature) => feature.title),
+    },
+    ...(product.faq.length > 0
+      ? [
+          faqJsonLd(
+            product.faq.map((item) => ({
+              question: item.question,
+              answer: item.answer,
+            })),
+          ),
+        ]
+      : []),
+  ];
+
   return (
     <main className="pt-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={generateJsonLd(structuredData)}
+      />
+
       {/* Breadcrumb */}
       <div className="container-custom mb-8">
         <nav className="flex items-center gap-2 text-sm text-[--text-tertiary]">
@@ -136,7 +180,7 @@ const ProductDetailPage = async ({ params }: PageProps) => {
         <section className="section-padding bg-[--navy-900]">
           <div className="container-custom">
             <h2 className="mb-12 font-heading text-2xl font-semibold text-white md:text-3xl">
-              Who It's For
+              Who It&apos;s For
             </h2>
             <div className="grid gap-6 sm:grid-cols-2">
               {product.useCases.map((uc) => (
