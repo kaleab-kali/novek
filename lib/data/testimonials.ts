@@ -15,11 +15,11 @@ export const testimonials: Testimonial[] = [
     role: "Managing Director",
     company: "Zellion LLC",
   },
-  {
-    quote:
-      "Novek delivered custom software for our operations. The solution was robust, scalable, and tailored to our needs.",
-    name: "Ezana M.",
-    role: "Operations Manager",
-    company: "Titan Industrial PLC",
-  },
+  // {
+  //   quote:
+  //     "Novek delivered custom software for our operations. The solution was robust, scalable, and tailored to our needs.",
+  //   name: "Ezana M.",
+  //   role: "Operations Manager",
+  //   company: "Titan Industrial PLC",
+  // },
 ];
