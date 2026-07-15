@@ -11,10 +11,10 @@ export function ProductsShowcase() {
     <section className="py-12 sm:py-16 md:py-20">
       <div className="container-custom">
         <h2 className="font-heading text-2xl text-[#E8E4DC]">
-          Products in production
+          Product platforms
         </h2>
         <p className="mt-2 text-[#9A9590]">
-          Software we built, ship, and maintain.
+          Software we build, ship, and support for serious operations.
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">

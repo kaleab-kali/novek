@@ -37,7 +37,7 @@ export function TechStack() {
       <SectionHeading
         overline="OUR TOOLKIT"
         title="Technologies We Master"
-        subtitle="We choose the right tool for every job — here are the ones we reach for most."
+        subtitle="We choose the right tool for every job. These are the ones we reach for most."
       />
 
       <div className="space-y-10">

@@ -61,7 +61,7 @@ export function ProcessTimeline() {
         viewport={viewportConfig}
         className="relative"
       >
-        {/* ── Vertical line (desktop: center, mobile: left) ───── */}
+        {/* Vertical line (desktop: center, mobile: left) */}
         <div
           aria-hidden
           className="absolute bottom-0 left-5 top-0 w-[2px] bg-[#C9A96E] md:left-1/2 md:-translate-x-1/2"
@@ -77,7 +77,7 @@ export function ProcessTimeline() {
                 variants={fadeUp}
                 className="relative flex items-start gap-6 md:gap-0"
               >
-                {/* ── Node on the line ─────────────────────────── */}
+                {/* Node on the line */}
                 <div
                   className={cn(
                     "relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#C9A96E] font-heading text-sm font-semibold text-[#0A0F1E] shadow-lg shadow-[#C9A96E]/20",
@@ -87,7 +87,7 @@ export function ProcessTimeline() {
                   {step.number}
                 </div>
 
-                {/* ── Content card ─────────────────────────────── */}
+                {/* Content card */}
                 <div
                   className={cn(
                     "flex-1 rounded-xl border border-white/[0.06] bg-white/[0.02] p-5",

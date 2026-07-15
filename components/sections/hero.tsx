@@ -18,11 +18,11 @@ const CLIENTS = [
 
 const CAPABILITIES = [
   "Custom Software",
-  "AI Integration",
-  "ERP Systems",
-  "Tax Intelligence",
+  "E-Invoicing",
+  "ERP & CRM",
+  "Capital Market Systems",
   "Hospitality Tech",
-  "Digital Marketing",
+  "AI Products",
 ] as const;
 
 export function Hero() {
@@ -39,7 +39,7 @@ export function Hero() {
         }}
       />
 
-      {/* ─── Top section: main content ─── */}
+      {/* Top section: main content */}
       <div className="relative z-10 flex flex-1 px-5 pt-20 sm:px-6 sm:pt-24 lg:items-center lg:pt-0">
         <div className="container-custom grid w-full grid-cols-1 items-center lg:grid-cols-2 lg:gap-12">
           <div>
@@ -63,8 +63,8 @@ export function Hero() {
               transition={{ duration: 0.4, delay: 0.15 }}
               className="font-heading text-[26px] font-semibold leading-[1.12] tracking-tight text-[#E8E4DC] sm:text-[34px] md:text-[42px] lg:text-[50px] xl:text-[56px]"
             >
-              Software that runs{" "}
-              <span className="text-[#C9A96E]">real businesses.</span>
+              Business systems built{" "}
+              <span className="text-[#C9A96E]">for Ethiopia.</span>
             </motion.h1>
 
             {/* Subtitle */}
@@ -74,8 +74,8 @@ export function Hero() {
               transition={{ duration: 0.3, delay: 0.3 }}
               className="mt-3 max-w-[400px] text-[13px] leading-[1.6] text-[#9A9590] sm:text-[14px] lg:text-[15px]"
             >
-              Custom platforms, ERPs, AI systems, and SaaS products
-              for companies across Ethiopia and beyond.
+              E-invoicing, ERP, CRM, capital market platforms, and custom
+              software for organizations that need dependable operations.
             </motion.p>
 
             {/* CTAs */}
@@ -143,7 +143,7 @@ export function Hero() {
         </div>
       </div>
 
-      {/* ─── Bottom: marquee trust bar (fills remaining space) ─── */}
+      {/* Bottom: marquee trust bar */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -156,7 +156,7 @@ export function Hero() {
             <Image src="/logo.png" alt="" width={16} height={16} className="h-4 w-4 opacity-30 lg:hidden" />
             <span className="text-[10px] text-[#6B6560]">Addis Ababa, Ethiopia</span>
           </div>
-          <span className="text-[10px] text-[#6B6560]">8 products &middot; 6 services</span>
+          <span className="text-[10px] text-[#6B6560]">18 products &middot; 6 services</span>
         </div>
 
         {/* Marquee */}

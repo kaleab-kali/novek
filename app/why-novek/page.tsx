@@ -18,7 +18,7 @@ import { siteConfig } from "@/lib/data/site";
 export const metadata = generatePageMetadata({
   title: "Why NOVEK | Technology Company in Ethiopia",
   description:
-    "Why businesses choose NOVEK ICT Solutions for custom software development, AI integration, ERP, CRM, SaaS, hospitality, tax, and digital systems in Ethiopia.",
+    "Why businesses choose NOVEK ICT Solutions for custom software development, AI integration, ERP, CRM, e-invoicing, hospitality, tax, and digital systems in Ethiopia.",
   path: "/why-novek",
 });
 

@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  turbopack: {
+    root: process.cwd(),
+  },
   async redirects() {
     return [
       {
@@ -79,4 +82,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig
+export default nextConfig;

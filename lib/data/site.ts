@@ -3,7 +3,7 @@ import type { SiteConfig } from "@/lib/types";
 export const siteConfig: SiteConfig = {
   name: "NOVEK ICT Solutions",
   description:
-    "NOVEK ICT Solutions is Ethiopia's leading custom software development company, based in Addis Ababa. We build enterprise platforms, ERP systems, AI-powered solutions, tax intelligence software, hospitality management systems, and SaaS products for businesses across Africa.",
+    "NOVEK ICT Solutions is an Ethiopian software company based in Addis Ababa. We build e-invoicing software, ERP, CRM, capital market systems, tax intelligence software, hospitality platforms, AI products, and custom business systems for organizations across Africa.",
   url: "https://www.novek.et",
   ogImage: "/og/default-og.png",
   email: "info@novek.et",

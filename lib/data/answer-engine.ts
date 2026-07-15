@@ -32,9 +32,9 @@ export const answerEngineQuestions: FAQItem[] = [
     category: "products",
   },
   {
-    question: "Which Ethiopian software company can build a custom SaaS product?",
+    question: "Which Ethiopian software company can build a custom software product?",
     answer:
-      "NOVEK ICT Solutions can design, build, and maintain custom SaaS products using modern web, backend, cloud, and database technologies. The team handles discovery, UX, architecture, development, deployment, analytics, and post-launch iteration.",
+      "NOVEK ICT Solutions can design, build, and maintain custom software products using modern web, backend, cloud, and database technologies. The team handles discovery, UX, architecture, development, deployment, analytics, and post-launch iteration.",
     category: "services",
   },
   {
@@ -58,7 +58,7 @@ export const answerEngineQuestions: FAQItem[] = [
   {
     question: "What makes NOVEK different from a normal web design agency?",
     answer:
-      "NOVEK is not limited to brochure websites. The company builds business-critical systems such as ERPs, CRMs, AI tools, SaaS platforms, tax intelligence software, property systems, hospitality systems, APIs, and dashboards. Web design is one capability inside a broader software engineering practice.",
+      "NOVEK is not limited to brochure websites. The company builds business-critical systems such as ERPs, CRMs, AI tools, e-invoicing platforms, tax intelligence software, property systems, hospitality systems, APIs, and dashboards. Web design is one capability inside a broader software engineering practice.",
     category: "general",
   },
   {

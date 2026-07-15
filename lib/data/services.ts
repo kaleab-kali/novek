@@ -6,7 +6,7 @@ export const services: Service[] = [
     name: "Custom Software Development",
     tagline: "Bespoke solutions built for your unique challenges",
     description:
-      "We design and develop custom software solutions tailored to your exact business requirements. From enterprise platforms to consumer-facing applications, our team delivers scalable, maintainable software that grows with your business. Every line of code is written with your goals in mind — no templates, no shortcuts.",
+      "We design and develop custom software solutions tailored to your exact business requirements. From enterprise platforms to consumer-facing applications, our team delivers scalable, maintainable software that grows with your business. Every line of code is written around your workflows, goals, and operating constraints.",
     shortDescription:
       "Tailored software solutions built from the ground up for your business.",
     icon: "Code2",
@@ -69,7 +69,7 @@ export const services: Service[] = [
       {
         question: "Do you work with existing codebases?",
         answer:
-          "Yes. We regularly work with existing systems — whether it's adding features, fixing issues, or modernizing legacy code to current standards.",
+          "Yes. We regularly work with existing systems, including adding features, fixing issues, and modernizing legacy code to current standards.",
         category: "services",
       },
       {
@@ -150,7 +150,7 @@ export const services: Service[] = [
     name: "AI Integration",
     tagline: "Embed intelligence into your existing systems",
     description:
-      "We help companies integrate artificial intelligence into their existing workflows and systems. From natural language processing to computer vision, predictive analytics to generative AI — we make AI practical, not theoretical. Our solutions are designed to enhance human capabilities, not replace them.",
+      "We help companies integrate artificial intelligence into their existing workflows and systems. From natural language processing to computer vision, predictive analytics, and generative AI, we focus on practical systems that improve real work.",
     shortDescription:
       "Integrate AI capabilities into your existing business systems and workflows.",
     icon: "Brain",
@@ -359,7 +359,7 @@ export const services: Service[] = [
       {
         question: "Who is the AI training designed for?",
         answer:
-          "Everyone — from C-suite executives to junior developers. We customize the content based on roles, experience levels, and your company's specific use cases.",
+          "Everyone from C-suite executives to junior developers. We customize the content based on roles, experience levels, and your company's specific use cases.",
         category: "services",
       },
       {
@@ -446,7 +446,7 @@ export const services: Service[] = [
     name: "Luxury Website Design",
     tagline: "Premium digital experiences that elevate your brand",
     description:
-      "We craft bespoke, high-end websites that reflect the prestige and quality of luxury brands. Every pixel is intentional — from cinematic scroll animations to glassmorphic interfaces. Our luxury websites are not templates with a dark theme; they are custom-built digital experiences designed to captivate, convert, and leave lasting impressions.",
+      "We craft bespoke, high-end websites that reflect the prestige and quality of luxury brands. Every page is designed with purpose, from motion and typography to conversion paths and content structure. Our luxury websites are custom-built digital experiences, not templates with a dark theme.",
     shortDescription:
       "Bespoke, high-end websites that reflect your brand's prestige and quality.",
     icon: "Palette",
@@ -466,7 +466,7 @@ export const services: Service[] = [
       {
         title: "Performance Optimized",
         description:
-          "Beautiful and fast — because luxury shouldn't mean slow",
+          "Beautiful and fast, because luxury should not mean slow",
         icon: "Zap",
       },
       {
@@ -503,7 +503,7 @@ export const services: Service[] = [
       {
         question: "What makes a luxury website different from a regular one?",
         answer:
-          "Every detail is intentional — from custom animations and micro-interactions to bespoke typography and cinematic scroll experiences. It's not a template; it's a crafted digital experience.",
+          "Every detail is intentional, from custom animations and micro-interactions to bespoke typography and cinematic scroll experiences. It is not a template; it is a crafted digital experience.",
         category: "services",
       },
       {
@@ -655,7 +655,7 @@ export const services: Service[] = [
       {
         question: "How do you measure marketing success?",
         answer:
-          "We set clear KPIs at the start — traffic, conversions, ROI, engagement — and provide monthly reports with transparent metrics and actionable recommendations.",
+          "We set clear KPIs at the start, including traffic, conversions, ROI, and engagement, then provide monthly reports with transparent metrics and actionable recommendations.",
         category: "services",
       },
       {
@@ -831,7 +831,7 @@ export const services: Service[] = [
       {
         title: "Actionable Roadmaps",
         description:
-          "Clear, practical plans — not theoretical frameworks collecting dust.",
+          "Clear, practical plans instead of theoretical frameworks collecting dust.",
         icon: "Map",
       },
       {
