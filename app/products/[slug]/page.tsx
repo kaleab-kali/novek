@@ -26,7 +26,7 @@ export const generateMetadata = async ({
   const product = products.find((p) => p.slug === slug);
   if (!product) return {};
   return generatePageMetadata({
-    title: product.name,
+    title: `${product.name} | Software Product in Ethiopia`,
     description: product.shortDescription,
     path: `/products/${product.slug}`,
   });
@@ -190,6 +190,32 @@ const ProductDetailPage = async ({ params }: PageProps) => {
                   </h3>
                   <p className="text-sm leading-relaxed text-[--text-secondary]">
                     {uc.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Integrations */}
+      {product.integrations.length > 0 && (
+        <section className="section-padding">
+          <div className="container-custom">
+            <h2 className="mb-12 font-heading text-2xl font-semibold text-white md:text-3xl">
+              Integrations
+            </h2>
+            <div className="grid gap-6 sm:grid-cols-2">
+              {product.integrations.map((integration) => (
+                <div
+                  key={integration.name}
+                  className="card-surface rounded-xl p-6"
+                >
+                  <h3 className="mb-2 font-heading text-base font-semibold text-white">
+                    {integration.name}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-[--text-secondary]">
+                    {integration.description}
                   </p>
                 </div>
               ))}

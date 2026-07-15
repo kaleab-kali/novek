@@ -53,7 +53,7 @@ export const projects: Project[] = [
     year: "2024",
     thumbnail: "/projects/kuriftu-hospitality-thumb.jpg",
     heroImage: "/projects/kuriftu-hospitality-hero.jpg",
-    tags: ["Hospitality", "SaaS", "Multi-property", "Analytics"],
+    tags: ["Hospitality", "Cloud Platform", "Multi-property", "Analytics"],
     services: ["custom-software-development", "digital-consulting"],
     shortDescription:
       "A comprehensive hotel management platform handling reservations, guest services, housekeeping, and revenue analytics across multiple resort properties.",

@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /* ============================================
-   NOVEK ICT SOLUTIONS — DESIGN SYSTEM
+   NOVEK ICT SOLUTIONS - DESIGN SYSTEM
    Navy + Light Blue + Creamy Gold
    No gradients. Clean. Professional.
    ============================================ */
@@ -53,7 +53,7 @@
   --sidebar-border: oklch(1 0 0 / 8%);
   --sidebar-ring: oklch(0.82 0.1 80);
 
-  /* ── Brand palette ── */
+  /* Brand palette */
   --navy-950: #0A0F1E;
   --navy-900: #0D1527;
   --navy-800: #131D35;

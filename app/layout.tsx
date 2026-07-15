@@ -24,7 +24,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} — Custom Software & AI Solutions | Ethiopia`,
+    default: `${siteConfig.name} - Ethiopian Software & AI Solutions`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -34,13 +34,19 @@ export const metadata: Metadata = {
     "tech company addis ababa",
     "custom software ethiopia",
     "ERP software ethiopia",
+    "e-invoicing software ethiopia",
+    "e-invoicing SaaS ethiopia",
+    "capital market software ethiopia",
+    "broker back office software ethiopia",
+    "order management system ethiopia",
+    "shareholder management system ethiopia",
     "AI solutions africa",
     "NOVEK ICT Solutions",
     "NOVEK Ethiopia",
     "best tech company Ethiopia",
     "AI company Ethiopia",
     "digital transformation ethiopia",
-    "SaaS products ethiopia",
+    "business software products ethiopia",
     "hospitality software ethiopia",
     "tax software ethiopia",
     "web development addis ababa",
@@ -69,7 +75,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: `${siteConfig.name} — Custom Software & AI Solutions | Ethiopia`,
+    title: `${siteConfig.name} - Ethiopian Software & AI Solutions`,
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
@@ -79,7 +85,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — Custom Software & AI Solutions`,
+    title: `${siteConfig.name} - Ethiopian Software & AI Solutions`,
     description: siteConfig.description,
     images: ["/og/default-og.png"],
     site: "@novektech",
@@ -154,20 +160,25 @@ export default function RootLayout({
               knowsAbout: [
                 "custom software development in Ethiopia",
                 "AI integration for businesses",
+                "e-invoicing software in Ethiopia",
                 "ERP software",
                 "CRM software",
+                "capital market software",
+                "broker back office systems",
+                "order management systems",
+                "shareholder management systems",
                 "hospitality management software",
                 "tax intelligence software",
                 "restaurant management software",
                 "property management software",
-                "SaaS product development",
+                "business software product development",
                 "digital transformation",
               ],
               sameAs: allSocials,
             }),
           }}
         />
-        {/* WebSite Schema — enables sitelinks search box in Google */}
+        {/* WebSite Schema: enables sitelinks search box in Google */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -189,7 +200,7 @@ export default function RootLayout({
             }),
           }}
         />
-        {/* SiteNavigationElement — helps Google show sitelinks */}
+        {/* SiteNavigationElement: helps Google show sitelinks */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

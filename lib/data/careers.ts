@@ -168,7 +168,7 @@ export const jobPostings: JobPosting[] = [
       "Bachelor's degree in Marketing, Communications, Business, or related field",
     ],
     niceToHaves: [
-      "Experience marketing SaaS products or technical services",
+      "Experience marketing software products or technical services",
       "Proficiency in Amharic for local market campaigns",
       "Knowledge of CRM platforms and lead nurturing workflows",
       "Experience with video marketing and production",

@@ -10,13 +10,23 @@ import {
   Users,
   Hotel,
   ShoppingCart,
+  ShoppingBag,
+  FileText,
+  Heart,
+  Phone,
+  MessageCircle,
+  LineChart,
+  Briefcase,
+  ClipboardList,
+  Shield,
+  Monitor,
   ArrowRight,
 } from "lucide-react";
 
 export const metadata = generatePageMetadata({
-  title: "Products | Tax, ERP, CRM, Hospitality & E-Commerce Software",
+  title: "Products | E-Invoicing, ERP, CRM & Capital Market Software",
   description:
-    "Enterprise-grade software products by NOVEK ICT Solutions: tax compliance, ERP, restaurant management, property management, CRM, e-commerce, and AI platforms.",
+    "Software products by NOVEK ICT Solutions: e-invoicing software, ERP, CRM, capital market systems, shareholder management, hospitality, property, restaurant, e-commerce, and AI platforms.",
   path: "/products",
 });
 
@@ -29,6 +39,16 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   Users,
   Hotel,
   ShoppingCart,
+  ShoppingBag,
+  FileText,
+  Heart,
+  Phone,
+  MessageCircle,
+  LineChart,
+  Briefcase,
+  ClipboardList,
+  Shield,
+  Monitor,
 };
 
 const ProductsPage = () => {
@@ -39,11 +59,11 @@ const ProductsPage = () => {
           <div className="mx-auto mb-16 max-w-2xl text-center">
             <span className="overline mb-4 block">Our Products</span>
             <h1 className="font-heading text-3xl font-semibold tracking-tight text-white md:text-4xl xl:text-5xl">
-              Software That Works
+              Software Products for Ethiopian Businesses
             </h1>
             <p className="mt-4 text-base leading-relaxed text-[--text-secondary] md:text-lg">
-              Production-ready platforms built for the realities of doing
-              business in Ethiopia and across Africa. Each product is designed,
+              E-invoicing, ERP, CRM, capital market systems, hospitality
+              software, property tools, and customer-facing apps designed,
               developed, and supported by our team in Addis Ababa.
             </p>
           </div>

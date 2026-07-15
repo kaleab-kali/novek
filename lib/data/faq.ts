@@ -5,7 +5,7 @@ export const faqItems: FAQItem[] = [
   {
     question: "What is NOVEK ICT Solutions?",
     answer:
-      "NOVEK ICT Solutions is an Ethiopia-based custom software development company and product studio. We build bespoke enterprise platforms, AI-powered solutions, and innovative SaaS products for businesses across Africa and beyond. Our team combines deep local market knowledge with world-class engineering practices.",
+      "NOVEK ICT Solutions is an Ethiopia-based custom software development company and product studio. We build bespoke enterprise platforms, AI-powered solutions, e-invoicing software, and business-critical digital products for organizations across Africa and beyond. Our team combines deep local market knowledge with world-class engineering practices.",
     category: "general",
   },
   {
@@ -119,7 +119,7 @@ export const faqItems: FAQItem[] = [
   {
     question: "Can you integrate with existing systems and APIs?",
     answer:
-      "Yes. Integration is one of our core strengths. We build custom APIs, connect to third-party services via REST and GraphQL, implement webhooks, and create middleware to bridge legacy systems with modern platforms. We have experience integrating with banking APIs, government systems, and international SaaS platforms.",
+      "Yes. Integration is one of our core strengths. We build custom APIs, connect to third-party services via REST and GraphQL, implement webhooks, and create middleware to bridge legacy systems with modern platforms. We have experience integrating with banking APIs, government systems, and international cloud platforms.",
     category: "technical",
   },
   {

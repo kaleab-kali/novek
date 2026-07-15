@@ -6,9 +6,11 @@ import type {
   UseCase,
   FAQItem,
 } from "@/lib/types";
+import { newProducts } from "@/lib/data/new-products";
 
 export const products: Product[] = [
-  // ── Tax Intelligence Platform ──────────────────────────────────────
+  ...newProducts,
+  // Tax Intelligence Platform
   {
     slug: "tax-intelligence-platform",
     name: "Tax Intelligence Platform",
@@ -187,7 +189,7 @@ export const products: Product[] = [
     ] as FAQItem[],
   },
 
-  // ── Restaurant Management System ───────────────────────────────────
+  // Restaurant Management System
   {
     slug: "restaurant-management-system",
     name: "Restaurant Management System",
@@ -368,7 +370,7 @@ export const products: Product[] = [
     ] as FAQItem[],
   },
 
-  // ── NOVEK ERP ──────────────────────────────────────────────────────
+  // NOVEK ERP
   {
     slug: "novek-erp",
     name: "NOVEK ERP",
@@ -543,7 +545,7 @@ export const products: Product[] = [
       {
         question: "Is the ERP available as a cloud solution?",
         answer:
-          "Yes. NOVEK ERP is offered as a cloud-hosted SaaS solution or as an on-premise deployment, depending on your organization's requirements and policies.",
+          "Yes. NOVEK ERP is offered as a cloud-hosted solution or as an on-premise deployment, depending on your organization's requirements and policies.",
         category: "general",
       },
       {
@@ -555,7 +557,7 @@ export const products: Product[] = [
     ] as FAQItem[],
   },
 
-  // ── Property Management System ─────────────────────────────────────
+  // Property Management System
   {
     slug: "property-management-system",
     name: "Property Management System",
@@ -716,7 +718,7 @@ export const products: Product[] = [
     ] as FAQItem[],
   },
 
-  // ── LuX AI ─────────────────────────────────────────────────────────
+  // LuX AI
   {
     slug: "lux-ai",
     name: "LuX AI",
@@ -891,7 +893,7 @@ export const products: Product[] = [
     ] as FAQItem[],
   },
 
-  // ── NOVEK CRM ──────────────────────────────────────────────────────
+  // NOVEK CRM
   {
     slug: "novek-crm",
     name: "NOVEK CRM",
@@ -1058,7 +1060,7 @@ export const products: Product[] = [
     ] as FAQItem[],
   },
 
-  // ── Hospitality Management System ──────────────────────────────────
+  // Hospitality Management System
   {
     slug: "hospitality-management-system",
     name: "Hospitality Management System",
@@ -1238,7 +1240,7 @@ export const products: Product[] = [
     ] as FAQItem[],
   },
 
-  // ── NOVEK Commerce ─────────────────────────────────────────────────
+  // NOVEK Commerce
   {
     slug: "novek-commerce",
     name: "NOVEK Commerce",
@@ -1426,7 +1428,7 @@ export const products: Product[] = [
   },
 ];
 
-// ── Helper functions ───────────────────────────────────────────────────
+// Helper functions
 
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find((product) => product.slug === slug);

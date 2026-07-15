@@ -15,7 +15,7 @@ export const impactMetrics: Metric[] = [
 ];
 
 export const industryStats: Metric[] = [
-  { value: "6", label: "SaaS Products Launched" },
+  { value: "18", label: "Product Lines" },
   { value: "30+", label: "Enterprise Clients" },
   { value: "2M+", label: "End Users on Our Platforms" },
   { value: "500K+", label: "API Calls Handled Daily" },

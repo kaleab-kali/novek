@@ -16,14 +16,15 @@ export function AboutSnapshot() {
         <p className="mt-4 text-sm leading-relaxed text-[#9A9590]">
           Based in Addis Ababa at Lem Hotel Building, Megnagna, we build
           the software that Ethiopian businesses and government agencies
-          depend on daily. Enterprise systems, AI solutions, hotel
-          platforms, ERP tools — if it needs to work at scale, we build it.
+          depend on daily. Enterprise systems, e-invoicing, hotel
+          platforms, ERP tools, and capital market systems are part of what
+          we build and support.
         </p>
 
         <p className="mt-4 text-sm leading-relaxed text-[#9A9590]">
           We are a product and engineering company with dedicated teams,
-          in-house expertise across six service lines, and eight products
-          in active production.
+          in-house expertise across six service lines, and a growing product
+          portfolio for business-critical operations.
         </p>
 
         <Link

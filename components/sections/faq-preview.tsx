@@ -12,7 +12,7 @@ import {
 const FAQS = [
   {
     q: "What types of software does NOVEK build?",
-    a: "We build custom enterprise platforms, ERPs, AI-powered tools, mobile apps, SaaS products, and hospitality/tax/property management systems. If it runs a business, we can build it.",
+    a: "We build custom enterprise platforms, e-invoicing software, ERP, CRM, capital market systems, mobile apps, AI products, and hospitality, tax, and property management systems.",
   },
   {
     q: "How long does a typical project take?",
@@ -24,7 +24,7 @@ const FAQS = [
   },
   {
     q: "What happens after launch?",
-    a: "We offer ongoing maintenance, monitoring, and iteration packages. We don't disappear after deployment — 24/7 support is part of what we do.",
+    a: "We offer ongoing maintenance, monitoring, and iteration packages. We stay available after deployment with support for production systems.",
   },
   {
     q: "How do we get started?",

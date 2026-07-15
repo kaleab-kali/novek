@@ -66,7 +66,7 @@ export function Footer() {
           </form>
         </div>
 
-        {/* Links — simple grid, 3 columns on all sizes */}
+        {/* Links: simple grid, 3 columns on all sizes */}
         <div className="mt-6 grid grid-cols-3 gap-y-2 sm:mt-8">
           {links.map((link) => (
             <Link
