@@ -102,6 +102,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: siteConfig.googleVerification || undefined,
+  },
   other: {
     "msapplication-TileImage": "/icons/mstile-150x150.png",
     "msapplication-TileColor": "#0A0F1E",
@@ -120,10 +123,23 @@ export default function RootLayout({
     socialExtended.youtube,
   ];
 
+  const navigationItems = [
+    { name: "Services", url: `${siteConfig.url}/services` },
+    { name: "Products", url: `${siteConfig.url}/products` },
+    { name: "Projects", url: `${siteConfig.url}/projects` },
+    { name: "Why NOVEK", url: `${siteConfig.url}/why-novek` },
+    { name: "Industries", url: `${siteConfig.url}/industries` },
+    { name: "About", url: `${siteConfig.url}/about` },
+    { name: "Contact", url: `${siteConfig.url}/contact` },
+    { name: "FAQ", url: `${siteConfig.url}/faq` },
+    { name: "Careers", url: `${siteConfig.url}/careers` },
+  ];
+
   return (
     <html
       lang="en"
       className={cn("dark antialiased", dmSans.variable, jetbrainsMono.variable)}
+      data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
       <head>
@@ -200,45 +216,51 @@ export default function RootLayout({
             }),
           }}
         />
-        {/* SiteNavigationElement: helps Google show sitelinks */}
+        {/* SiteNavigationElement: standard Schema.org ItemList for sitelinks */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "SiteNavigationElement",
-              name: [
-                "Services",
-                "Products",
-                "Projects",
-                "Why NOVEK",
-                "Industries",
-                "About",
-                "Contact",
-                "FAQ",
-                "Careers",
-              ],
-              url: [
-                `${siteConfig.url}/services`,
-                `${siteConfig.url}/products`,
-                `${siteConfig.url}/projects`,
-                `${siteConfig.url}/why-novek`,
-                `${siteConfig.url}/industries`,
-                `${siteConfig.url}/about`,
-                `${siteConfig.url}/contact`,
-                `${siteConfig.url}/faq`,
-                `${siteConfig.url}/careers`,
-              ],
+              "@type": "ItemList",
+              itemListElement: navigationItems.map((item, index) => ({
+                "@type": "SiteNavigationElement",
+                position: index + 1,
+                name: item.name,
+                url: item.url,
+              })),
             }),
           }}
         />
       </head>
-      <body className="min-h-screen bg-[#0A0F1E] font-sans text-white">
+      <body className="min-h-screen bg-[#070B16] font-sans text-[#E8E4DC] relative antialiased selection:bg-[#C9A96E]/25 selection:text-[#F5F0E8]">
+        {/* Consistent Global Precision Matrix Background */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none fixed inset-0 z-0 opacity-[0.035]"
+          style={{
+            backgroundImage: "radial-gradient(rgba(201, 169, 110, 0.7) 1px, transparent 1px)",
+            backgroundSize: "28px 28px",
+          }}
+        />
+        {/* Subtle Ambient Depth Lighting */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none fixed top-0 left-1/2 -z-10 h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_top,rgba(201,169,110,0.14)_0%,rgba(91,141,239,0.04)_50%,transparent_75%)] blur-[100px]"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none fixed top-1/2 -right-40 -z-10 h-[400px] w-[400px] rounded-full bg-[radial-gradient(circle,rgba(201,169,110,0.06)_0%,transparent_70%)] blur-[90px]"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none fixed bottom-10 -left-40 -z-10 h-[400px] w-[400px] rounded-full bg-[radial-gradient(circle,rgba(91,141,239,0.05)_0%,transparent_70%)] blur-[90px]"
+        />
         <SkipToContent />
         <ScrollProgress />
         <NoiseOverlay />
         <Navbar />
-        <main id="main-content">{children}</main>
+        <main id="main-content" className="relative z-10">{children}</main>
         <Footer />
       </body>
     </html>

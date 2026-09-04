@@ -192,4 +192,6 @@ export interface SiteConfig {
     facebook: string;
     instagram: string;
   };
+  googleVerification?: string;
+  calendlyUrl?: string;
 }

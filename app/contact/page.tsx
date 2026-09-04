@@ -1,6 +1,6 @@
 import { generatePageMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/data/site";
-import { ContactForm } from "@/components/shared/contact-form";
+import { ContactTabs } from "@/components/contact/contact-tabs";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export const metadata = generatePageMetadata({
@@ -12,17 +12,17 @@ export const metadata = generatePageMetadata({
 
 export default function ContactPage() {
   return (
-    <div className="px-5 pt-20 pb-12 sm:px-6 sm:pt-24 sm:pb-16">
+    <div id="schedule" className="px-5 pt-20 pb-12 sm:px-6 sm:pt-24 sm:pb-16 scroll-mt-20">
       <div className="container-custom">
         <h1 className="mb-1 font-heading text-xl font-semibold text-[#E8E4DC] sm:text-2xl">
           Get in touch
         </h1>
         <p className="mb-6 text-[13px] text-[#9A9590] sm:mb-8 sm:text-sm">
-          Have a project in mind? We respond within 24 hours.
+          Have a project in mind? Submit an inquiry or schedule a direct consultation.
         </p>
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
-          <ContactForm />
+          <ContactTabs />
 
           <div>
             <h2 className="mb-4 text-sm font-medium text-[#E8E4DC]">
