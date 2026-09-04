@@ -16,6 +16,8 @@ export const siteConfig: SiteConfig = {
     facebook: "https://facebook.com/novektech",
     instagram: "https://instagram.com/novektech",
   },
+  googleVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
+  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/kaleab-g-zeleke/30min",
 };
 
 export const socialExtended = {
