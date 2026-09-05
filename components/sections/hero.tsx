@@ -32,7 +32,7 @@ export const Hero = React.memo(() => {
   );
 
   return (
-    <section className="relative flex h-svh max-h-screen flex-col justify-between overflow-hidden bg-[#070B16] text-[#E8E4DC]">
+    <section className="relative flex min-h-svh flex-col justify-between overflow-hidden bg-[#070B16] text-[#E8E4DC]">
       {/* Overhead Luminous Spotlight (Attention-Capturing Light Design) */}
       <div
         aria-hidden="true"
@@ -54,8 +54,8 @@ export const Hero = React.memo(() => {
         }}
       />
 
-      {/* Main Center Stage - Clamped for Zero-Scroll Viewport */}
-      <div className="relative z-10 flex flex-1 items-center px-5 pt-16 sm:px-8 sm:pt-16 lg:pt-0">
+      {/* Main Center Stage - Safe from fixed navbar with pt-20 sm:pt-24 */}
+      <div className="relative z-10 flex flex-1 items-center px-5 pt-20 pb-8 sm:px-8 sm:pt-24 sm:pb-10 lg:pt-24 lg:pb-8">
         <div className="mx-auto w-full max-w-[1280px] grid grid-cols-1 items-center gap-6 lg:grid-cols-12 lg:gap-10">
           
           {/* Left Column: International Agency Copywriting (7 cols) */}
@@ -65,7 +65,7 @@ export const Hero = React.memo(() => {
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35 }}
-              className="font-heading text-[28px] font-bold leading-[1.12] tracking-tight text-[#FAF8F5] sm:text-[38px] md:text-[46px] lg:text-[50px] xl:text-[55px]"
+              className="font-heading text-[28px] font-bold leading-[1.14] tracking-tight text-[#FAF8F5] sm:text-[36px] md:text-[42px] lg:text-[44px] xl:text-[50px]"
             >
               The software backbone for{" "}
               <span className="relative inline-block text-[#C9A96E]">
