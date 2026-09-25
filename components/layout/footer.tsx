@@ -16,6 +16,7 @@ const links = [
   { label: "Contact", href: "/contact" },
   { label: "FAQ", href: "/faq" },
   { label: "Careers", href: "/careers" },
+  { label: "Blog", href: "/blog" },
   { label: "Partners", href: "/partners" },
   { label: "Privacy", href: "/privacy" },
   { label: "Terms", href: "/terms" },

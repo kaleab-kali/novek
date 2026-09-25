@@ -3,10 +3,16 @@ import { partners } from "@/lib/data/partners";
 import { ExternalLink } from "lucide-react";
 
 export const metadata = generatePageMetadata({
-  title: "Partners & Integrations",
+  title: "Partners & Technology Ecosystem | NOVEK Alliances",
   description:
-    "NOVEK ICT Solutions partners with leading technology, cloud, payment, and design platforms to deliver world-class solutions.",
+    "NOVEK ICT Solutions collaborates with Microsoft Partner Network, cloud infrastructure leaders, local Ethiopian banks, and payment providers to deliver secure digital solutions.",
   path: "/partners",
+  keywords: [
+    "NOVEK partners",
+    "Microsoft Partner Ethiopia",
+    "cloud partners Addis Ababa",
+    "fintech partnerships Ethiopia",
+  ],
 });
 
 const CATEGORY_ORDER = ["Technology", "Cloud", "Payment", "Design"] as const;

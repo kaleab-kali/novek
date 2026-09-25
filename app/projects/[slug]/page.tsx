@@ -26,9 +26,16 @@ export const generateMetadata = async ({
   if (!project) return {};
 
   return generatePageMetadata({
-    title: `${project.name} Project`,
-    description: project.shortDescription,
+    title: `${project.name} Case Study | ${project.industry} Software`,
+    description: `${project.name} case study by NOVEK ICT Solutions for ${project.client}. ${project.shortDescription}`,
     path: `/projects/${project.slug}`,
+    keywords: [
+      project.name,
+      project.client,
+      project.industry,
+      "software case study Ethiopia",
+      ...project.tags,
+    ],
   });
 };
 

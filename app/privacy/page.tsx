@@ -1,10 +1,11 @@
 import { generatePageMetadata } from "@/lib/seo";
 
 export const metadata = generatePageMetadata({
-  title: "Privacy Policy",
+  title: "Privacy Policy | How We Protect Your Data",
   description:
-    "Privacy policy for NOVEK ICT Solutions. Learn how we collect, use, and protect your personal information.",
+    "Review NOVEK ICT Solutions' privacy policy. Understand how we collect, process, and safeguard your enterprise and personal data in full compliance with local and international privacy standards.",
   path: "/privacy",
+  keywords: ["privacy policy", "data protection Ethiopia", "NOVEK privacy"],
 });
 
 const LAST_UPDATED = "April 1, 2026";

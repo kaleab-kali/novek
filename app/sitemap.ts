@@ -3,6 +3,7 @@ import { siteConfig } from "@/lib/data/site";
 import { services } from "@/lib/data/services";
 import { products } from "@/lib/data/products";
 import { projects } from "@/lib/data/projects";
+import { blogPosts } from "@/lib/data/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -69,6 +70,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${siteConfig.url}/blog`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
       url: `${siteConfig.url}/privacy`,
       lastModified: now,
       changeFrequency: "yearly",
@@ -117,5 +124,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
-  return [...staticRoutes, ...serviceRoutes, ...productRoutes, ...projectRoutes];
+  const blogRoutes: MetadataRoute.Sitemap = [
+    ...blogPosts.map((b) => ({
+      url: `${siteConfig.url}/blog/${b.slug}`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    })),
+  ];
+
+  return [...staticRoutes, ...serviceRoutes, ...productRoutes, ...projectRoutes, ...blogRoutes];
 }

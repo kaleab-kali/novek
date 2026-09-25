@@ -1,9 +1,11 @@
 import { generatePageMetadata } from "@/lib/seo";
 
 export const metadata = generatePageMetadata({
-  title: "Cookie Policy",
-  description: "Cookie policy for NOVEK ICT Solutions.",
+  title: "Cookie Policy | Tracking & Analytics Usage",
+  description:
+    "Learn about how NOVEK ICT Solutions uses cookies and modern tracking technologies to provide secure, personalized, and efficient enterprise web experiences.",
   path: "/cookie-policy",
+  keywords: ["cookie policy", "cookie tracking", "NOVEK cookies"],
 });
 
 export default function CookiePolicyPage() {

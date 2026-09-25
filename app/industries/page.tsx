@@ -10,10 +10,17 @@ import { industrySolutions } from "@/lib/data/answer-engine";
 import { services } from "@/lib/data/services";
 
 export const metadata = generatePageMetadata({
-  title: "Industries | Software and AI Solutions in Ethiopia",
+  title: "Industry Software Solutions in Ethiopia | Finance, Retail & Manufacturing",
   description:
-    "Industry software and AI solutions by NOVEK ICT Solutions for hospitality, real estate, retail, manufacturing, finance, tax, compliance, and business automation in Ethiopia.",
+    "Tailored industry software platforms by NOVEK ICT Solutions for Ethiopian hospitality, real estate, manufacturing, finance & capital markets, retail, and healthcare sectors.",
   path: "/industries",
+  keywords: [
+    "industry software Ethiopia",
+    "hospitality software Ethiopia",
+    "real estate software Addis Ababa",
+    "manufacturing ERP Ethiopia",
+    "financial software Africa",
+  ],
 });
 
 const IndustriesPage = () => {

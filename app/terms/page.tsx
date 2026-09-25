@@ -1,9 +1,11 @@
 import { generatePageMetadata } from "@/lib/seo";
 
 export const metadata = generatePageMetadata({
-  title: "Terms of Service",
-  description: "Terms of service for NOVEK ICT Solutions.",
+  title: "Terms of Service | Legal Terms & Conditions",
+  description:
+    "Review the terms of service governing your use of NOVEK ICT Solutions websites, enterprise software, APIs, and consulting services in Addis Ababa, Ethiopia.",
   path: "/terms",
+  keywords: ["terms of service", "NOVEK legal terms", "software agreement Ethiopia"],
 });
 
 export default function TermsPage() {

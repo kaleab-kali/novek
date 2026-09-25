@@ -113,10 +113,17 @@ export const generateMetadata = async ({
   const { slug } = await params;
   const service = services.find((s) => s.slug === slug);
   if (!service) return {};
+  const metaDescription = `${service.name} by NOVEK ICT Solutions in Addis Ababa, Ethiopia. ${service.tagline}. ${service.description.slice(0, 110)}...`;
   return generatePageMetadata({
-    title: service.name,
-    description: service.shortDescription,
+    title: `${service.name} in Ethiopia`,
+    description: metaDescription,
     path: `/services/${service.slug}`,
+    keywords: [
+      service.name,
+      `${service.name} Ethiopia`,
+      `${service.name} Addis Ababa`,
+      ...service.technologies,
+    ],
   });
 };
 

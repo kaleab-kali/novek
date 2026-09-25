@@ -132,6 +132,7 @@ export default function RootLayout({
     { name: "About", url: `${siteConfig.url}/about` },
     { name: "Contact", url: `${siteConfig.url}/contact` },
     { name: "FAQ", url: `${siteConfig.url}/faq` },
+    { name: "Blog", url: `${siteConfig.url}/blog` },
     { name: "Careers", url: `${siteConfig.url}/careers` },
   ];
 

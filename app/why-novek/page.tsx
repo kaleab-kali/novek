@@ -16,10 +16,17 @@ import {
 import { siteConfig } from "@/lib/data/site";
 
 export const metadata = generatePageMetadata({
-  title: "Why NOVEK | Technology Company in Ethiopia",
+  title: "Why Choose NOVEK | Ethiopian Software Engineering Excellence",
   description:
-    "Why businesses choose NOVEK ICT Solutions for custom software development, AI integration, ERP, CRM, e-invoicing, hospitality, tax, and digital systems in Ethiopia.",
+    "Discover why top organizations choose NOVEK ICT Solutions: 100% code ownership, deep Ethiopian regulatory compliance, local Addis Ababa engineering team, and enterprise SLA support.",
   path: "/why-novek",
+  keywords: [
+    "why NOVEK",
+    "top software company Ethiopia",
+    "best developers Addis Ababa",
+    "code ownership Ethiopia",
+    "enterprise software partner Africa",
+  ],
 });
 
 const featuredQuestions = answerEngineQuestions.slice(0, 10);

@@ -4,10 +4,17 @@ import { ContactTabs } from "@/components/contact/contact-tabs";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export const metadata = generatePageMetadata({
-  title: "Contact Us",
+  title: "Contact NOVEK ICT Solutions | Addis Ababa, Ethiopia",
   description:
-    "Get in touch with NOVEK ICT Solutions. Reach our team in Addis Ababa, Ethiopia for custom software development, AI integration, and digital consulting.",
+    "Contact NOVEK ICT Solutions at Lem Hotel Building, Megnagna, Addis Ababa. Call +251 987 888 646 or book a consultation for ERP, custom software, and AI solutions.",
   path: "/contact",
+  keywords: [
+    "contact NOVEK",
+    "software company Addis Ababa address",
+    "IT consultation Ethiopia",
+    "Lem Hotel Building Megnagna tech",
+    "software development consultation Ethiopia",
+  ],
 });
 
 export default function ContactPage() {

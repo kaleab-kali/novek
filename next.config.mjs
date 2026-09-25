@@ -11,11 +11,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/blog",
-        destination: "https://www.novek.et/projects",
-        permanent: true,
-      },
-      {
         source: "/portfolio",
         destination: "https://www.novek.et/projects",
         permanent: true,
