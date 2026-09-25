@@ -12,9 +12,20 @@ import { ScheduleConsultation } from "@/components/sections/schedule-consultatio
 import { CTABanner } from "@/components/sections/cta-banner";
 
 export const metadata = generatePageMetadata({
-  title: `${siteConfig.name} - Ethiopian Software & AI Solutions`,
-  description: siteConfig.description,
+  title: "NOVEK ICT Solutions | Premier Software & AI Company in Ethiopia",
+  description:
+    "NOVEK ICT Solutions is a premier technology firm in Addis Ababa, Ethiopia. We engineer custom software, ERP systems, e-invoicing SaaS, CRM, capital market platforms, and AI solutions.",
   path: "",
+  keywords: [
+    "software company Addis Ababa",
+    "software development Ethiopia",
+    "custom software Ethiopia",
+    "ERP systems Ethiopia",
+    "e-invoicing software Ethiopia",
+    "AI integration Ethiopia",
+    "NOVEK ICT Solutions",
+    "best tech company Ethiopia",
+  ],
 });
 
 export default function HomePage() {

@@ -4,10 +4,17 @@ import { jobPostings } from "@/lib/data/careers";
 import { MapPin, Clock, ArrowRight } from "lucide-react";
 
 export const metadata = generatePageMetadata({
-  title: "Careers | Join NOVEK ICT Solutions",
+  title: "Tech Careers in Addis Ababa | Join NOVEK ICT Solutions",
   description:
-    "Join the NOVEK ICT Solutions team in Addis Ababa. We are hiring engineers, designers, and marketers to build software for Africa.",
+    "Explore engineering, design, AI research, and product career opportunities at NOVEK ICT Solutions in Addis Ababa, Ethiopia. Build software that transforms Africa.",
   path: "/careers",
+  keywords: [
+    "tech jobs Addis Ababa",
+    "software engineering careers Ethiopia",
+    "developer jobs Ethiopia",
+    "NOVEK careers",
+    "IT jobs Addis Ababa",
+  ],
 });
 
 const CareersPage = () => {

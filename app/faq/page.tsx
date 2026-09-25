@@ -4,10 +4,17 @@ import { answerEngineQuestions } from "@/lib/data/answer-engine";
 import { FAQAccordion } from "@/components/shared/faq-accordion";
 
 export const metadata = generatePageMetadata({
-  title: "FAQ | Common Questions About Our Services",
+  title: "Frequently Asked Questions | Software, ERP & Pricing FAQ",
   description:
-    "Frequently asked questions about NOVEK ICT Solutions, our services, products, pricing, technical approach, and support.",
+    "Find answers to frequent questions about NOVEK ICT Solutions: software development pricing, timelines, ERP customization, ERCA e-invoicing compliance, and ongoing support.",
   path: "/faq",
+  keywords: [
+    "software development FAQ Ethiopia",
+    "software pricing Addis Ababa",
+    "ERP implementation timeline Ethiopia",
+    "NOVEK FAQ",
+    "custom software cost Ethiopia",
+  ],
 });
 
 const CATEGORY_LABELS: Record<string, string> = {

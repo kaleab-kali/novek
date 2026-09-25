@@ -24,10 +24,19 @@ import {
 } from "lucide-react";
 
 export const metadata = generatePageMetadata({
-  title: "Products | E-Invoicing, ERP, CRM & Capital Market Software",
+  title: "Enterprise Software Products in Ethiopia | ERP, E-Invoicing & AI",
   description:
-    "Software products by NOVEK ICT Solutions: e-invoicing software, ERP, CRM, capital market systems, shareholder management, hospitality, property, restaurant, e-commerce, and AI platforms.",
+    "Explore enterprise software platforms engineered by NOVEK ICT Solutions: ERCA-certified e-invoicing SaaS, NOVEK ERP, NOVEK CRM, Tax Intelligence, Hospitality, and Capital Market systems in Ethiopia.",
   path: "/products",
+  keywords: [
+    "enterprise software products Ethiopia",
+    "e-invoicing SaaS Ethiopia",
+    "ERP software Addis Ababa",
+    "CRM software Ethiopia",
+    "tax intelligence Ethiopia",
+    "capital market software Ethiopia",
+    "hospitality management Ethiopia",
+  ],
 });
 
 const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {

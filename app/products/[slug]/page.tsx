@@ -25,10 +25,17 @@ export const generateMetadata = async ({
   const { slug } = await params;
   const product = products.find((p) => p.slug === slug);
   if (!product) return {};
+  const metaDescription = `${product.name} by NOVEK ICT Solutions. ${product.tagline}. ${product.description.slice(0, 110)}...`;
   return generatePageMetadata({
-    title: `${product.name} | Software Product in Ethiopia`,
-    description: product.shortDescription,
+    title: `${product.name} | Software in Ethiopia`,
+    description: metaDescription,
     path: `/products/${product.slug}`,
+    keywords: [
+      product.name,
+      `${product.name} Ethiopia`,
+      "NOVEK ICT Solutions",
+      ...product.techStack,
+    ],
   });
 };
 

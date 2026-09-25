@@ -4,10 +4,17 @@ import { companyStats } from "@/lib/data/site";
 import { ArrowRight } from "lucide-react";
 
 export const metadata = generatePageMetadata({
-  title: "About NOVEK ICT Solutions | Software Company in Ethiopia",
+  title: "About Us | Leading Ethiopian Software & AI Engineering Firm",
   description:
-    "NOVEK ICT Solutions is an Ethiopian technology company building custom software, AI-powered platforms, and enterprise products for businesses across Africa.",
+    "Learn about NOVEK ICT Solutions, based in Addis Ababa, Ethiopia. With 50+ engineers, designers, and AI specialists, we build mission-critical enterprise platforms across Africa.",
   path: "/about",
+  keywords: [
+    "about NOVEK",
+    "software company Ethiopia",
+    "tech team Addis Ababa",
+    "IT firm Ethiopia",
+    "African technology enterprise",
+  ],
 });
 
 const AboutPage = () => {

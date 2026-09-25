@@ -12,10 +12,18 @@ import {
 } from "lucide-react";
 
 export const metadata = generatePageMetadata({
-  title: "Services | Custom Software Development, AI & Digital Solutions",
+  title: "Enterprise Technology Services in Ethiopia | Software, AI & Web",
   description:
-    "Custom software development, AI integration, luxury web design, digital marketing, and consulting services from NOVEK ICT Solutions in Addis Ababa, Ethiopia.",
+    "Explore NOVEK ICT Solutions services: custom software development, enterprise AI integration, corporate AI training, luxury website design, digital consulting, and growth marketing in Addis Ababa.",
   path: "/services",
+  keywords: [
+    "custom software development Ethiopia",
+    "AI integration Addis Ababa",
+    "web development Ethiopia",
+    "corporate IT training Ethiopia",
+    "digital transformation Ethiopia",
+    "IT consulting Addis Ababa",
+  ],
 });
 
 const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {

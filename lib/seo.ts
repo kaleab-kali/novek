@@ -9,6 +9,7 @@ interface GenerateMetadataProps {
   type?: "website" | "article";
   publishedTime?: string;
   authors?: string[];
+  keywords?: string[];
 }
 
 export function generatePageMetadata({
@@ -19,19 +20,24 @@ export function generatePageMetadata({
   type = "website",
   publishedTime,
   authors,
+  keywords,
 }: GenerateMetadataProps): Metadata {
   const url = `${siteConfig.url}${path}`;
   const ogImage = image || siteConfig.ogImage;
+  const fullTitle = title.includes("NOVEK")
+    ? title
+    : `${title} | ${siteConfig.name}`;
 
   return {
-    title: `${title} | ${siteConfig.name}`,
+    title: fullTitle,
     description,
     metadataBase: new URL(siteConfig.url),
     alternates: {
       canonical: url,
     },
+    ...(keywords && keywords.length > 0 && { keywords }),
     openGraph: {
-      title: `${title} | ${siteConfig.name}`,
+      title: fullTitle,
       description,
       url,
       siteName: siteConfig.name,
@@ -42,9 +48,20 @@ export function generatePageMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${title} | ${siteConfig.name}`,
+      title: fullTitle,
       description,
       images: [ogImage],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
     },
   };
 }

@@ -38,13 +38,14 @@ export function BlogCard({
         className,
       )}
     >
-      <Link href={`/projects/${slug}`} className="block">
-        {/* Image placeholder */}
-        <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#131D35]">
-          <div className="absolute inset-0 bg-[#0A0F1E]/60" />
-          <div className="absolute left-3 top-3">
+      <Link href={`/blog/${slug}`} className="block">
+        {/* Header bar / tag */}
+        <div className="relative aspect-[16/9] w-full overflow-hidden bg-gradient-to-br from-[#0D1527] to-[#131D35] p-5 flex flex-col justify-between">
+          <div className="flex items-center justify-between">
             <TagPill label={category} variant="accent" size="sm" />
+            <span className="text-xs font-mono text-[#C9A96E]/80">{readingTime}</span>
           </div>
+          <div className="h-0.5 w-12 bg-[#C9A96E]/40 group-hover:w-20 transition-all duration-300" />
         </div>
 
         {/* Content */}

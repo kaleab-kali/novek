@@ -6,10 +6,17 @@ import { projects } from "@/lib/data/projects";
 import { ProjectCard } from "@/components/shared/project-card";
 
 export const metadata = generatePageMetadata({
-  title: "Projects | Software Case Studies & Client Work",
+  title: "Client Case Studies & Enterprise Projects | Ethiopian Tech Solutions",
   description:
-    "Explore NOVEK ICT Solutions projects across tax intelligence, ERP, hospitality, e-commerce, restaurant management, and property management.",
+    "Explore case studies of software, ERP, tax intelligence, and AI systems deployed by NOVEK ICT Solutions for top Ethiopian enterprises, hotels, manufacturers, and financial institutions.",
   path: "/projects",
+  keywords: [
+    "software case studies Ethiopia",
+    "IT projects Addis Ababa",
+    "ERP implementation Ethiopia",
+    "NOVEK portfolio",
+    "enterprise software case studies",
+  ],
 });
 
 const ProjectsPage = () => {
