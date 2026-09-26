@@ -12,6 +12,7 @@ import { useScrollDirection } from "@/hooks/use-scroll-direction";
 const NAV_LINKS = [
   { label: "Services", href: "/services" },
   { label: "Products", href: "/products" },
+  { label: "Outsourcing", href: "/outsourcing" },
   { label: "Projects", href: "/projects" },
   { label: "Why NOVEK", href: "/why-novek" },
   { label: "About", href: "/about" },

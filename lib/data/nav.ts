@@ -98,6 +98,10 @@ export const navigation: NavItem[] = [
     ],
   },
   {
+    label: "Outsourcing",
+    href: "/outsourcing",
+  },
+  {
     label: "Work",
     href: "/projects",
   },

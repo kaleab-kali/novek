@@ -12,11 +12,12 @@ export const siteConfig: SiteConfig = {
   social: {
     linkedin: "https://linkedin.com/company/novektech",
     twitter: "https://twitter.com/novektech",
-    github: "https://github.com/kaleab-kali",
+    github: "https://github.com/novektech",
     facebook: "https://facebook.com/novektech",
     instagram: "https://instagram.com/novektech",
   },
   googleVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
+  yandexVerification: "194f462845dea97b",
   calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/kaleab-g-zeleke/30min",
 };
 
@@ -27,9 +28,9 @@ export const socialExtended = {
 };
 
 export const companyStats = [
-  { value: "500+", label: "Projects completed" },
-  { value: "50+", label: "Team members" },
-  { value: "10+", label: "Years experience" },
+  { value: "68+", label: "Projects completed" },
+  { value: "20+", label: "Team members" },
+  { value: "5+", label: "Years experience" },
   { value: "24/7", label: "Support" },
 ] as const;
 

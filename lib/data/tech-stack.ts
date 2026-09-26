@@ -24,6 +24,7 @@ export const techStack: TechStackCategory[] = [
     category: "Backend",
     items: [
       { name: "Node.js", icon: "nodejs" },
+      { name: "Rust", icon: "rust" },
       { name: "Python", icon: "python" },
       { name: "Go", icon: "go" },
       { name: "GraphQL", icon: "graphql" },

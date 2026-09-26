@@ -9,6 +9,7 @@ import { siteConfig, socialExtended } from "@/lib/data/site";
 const links = [
   { label: "Services", href: "/services" },
   { label: "Products", href: "/products" },
+  { label: "Outsourcing", href: "/outsourcing" },
   { label: "Projects", href: "/projects" },
   { label: "Why NOVEK", href: "/why-novek" },
   { label: "Industries", href: "/industries" },

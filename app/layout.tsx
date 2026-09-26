@@ -31,6 +31,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   keywords: [
     "software development ethiopia",
+    "best outsourcing company in ethiopia",
+    "software outsourcing company in ethiopia",
+    "hire developers in ethiopia",
+    "offshore software development addis ababa",
+    "dedicated development teams ethiopia",
+    "IT staff augmentation ethiopia",
     "tech company addis ababa",
     "custom software ethiopia",
     "ERP software ethiopia",
@@ -104,6 +110,7 @@ export const metadata: Metadata = {
   },
   verification: {
     google: siteConfig.googleVerification || undefined,
+    yandex: siteConfig.yandexVerification || "194f462845dea97b",
   },
   other: {
     "msapplication-TileImage": "/icons/mstile-150x150.png",
@@ -126,6 +133,7 @@ export default function RootLayout({
   const navigationItems = [
     { name: "Services", url: `${siteConfig.url}/services` },
     { name: "Products", url: `${siteConfig.url}/products` },
+    { name: "Outsourcing", url: `${siteConfig.url}/outsourcing` },
     { name: "Projects", url: `${siteConfig.url}/projects` },
     { name: "Why NOVEK", url: `${siteConfig.url}/why-novek` },
     { name: "Industries", url: `${siteConfig.url}/industries` },
@@ -144,6 +152,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <meta name="yandex-verification" content="194f462845dea97b" />
         {/* Organization Schema */}
         <script
           type="application/ld+json"
@@ -171,10 +180,22 @@ export default function RootLayout({
               },
               areaServed: [
                 { "@type": "Country", name: "Ethiopia" },
+                { "@type": "Country", name: "United States" },
+                { "@type": "Country", name: "Germany" },
+                { "@type": "Country", name: "United Kingdom" },
+                { "@type": "Country", name: "Sweden" },
+                { "@type": "Country", name: "Canada" },
+                { "@type": "Country", name: "United Arab Emirates" },
                 { "@type": "Place", name: "East Africa" },
                 { "@type": "Place", name: "Africa" },
+                { "@type": "Place", name: "Global" },
               ],
               knowsAbout: [
+                "software outsourcing in Ethiopia",
+                "offshore software development",
+                "dedicated development teams",
+                "IT staff augmentation",
+                "hire software developers in Ethiopia",
                 "custom software development in Ethiopia",
                 "AI integration for businesses",
                 "e-invoicing software in Ethiopia",

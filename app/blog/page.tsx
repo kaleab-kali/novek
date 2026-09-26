@@ -1,14 +1,14 @@
 import Link from "next/link";
-import { ArrowRight, BookOpen, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen, Globe2, Sparkles } from "lucide-react";
 import { generatePageMetadata } from "@/lib/seo";
 import { blogPosts } from "@/lib/data/blog";
 import { BlogCard } from "@/components/shared/blog-card";
 import { siteConfig } from "@/lib/data/site";
 
 export const metadata = generatePageMetadata({
-  title: "Blog & Insights | ERP, Software & AI in Ethiopia",
+  title: "Blog & Insights | ERP, E-Invoicing & Software Outsourcing in Ethiopia",
   description:
-    "Explore in-depth articles on ERP systems (Odoo, ERPNext, Custom, SAP), Ethiopian e-invoicing compliance, AI integration, and digital transformation.",
+    "Explore in-depth articles on ERP systems (Odoo, ERPNext, Custom, SAP), Ethiopian MOR e-invoicing SaaS compliance, and why global tech companies outsource software to Ethiopia.",
   path: "/blog",
 });
 
@@ -18,7 +18,7 @@ export default function BlogPage() {
     "@type": "Blog",
     name: "NOVEK Insights & Technology Blog",
     description:
-      "Enterprise tech insights, ERP comparison guides, and software engineering articles for Ethiopian and African businesses.",
+      "Enterprise tech insights, ERP comparison guides, e-invoicing compliance, and software outsourcing articles for Ethiopian and global businesses.",
     url: `${siteConfig.url}/blog`,
     publisher: {
       "@type": "Organization",
@@ -57,18 +57,18 @@ export default function BlogPage() {
                 Engineering & Enterprise Insights
               </h1>
               <p className="mt-4 text-base leading-relaxed text-[--text-secondary] md:text-lg">
-                Practical guides, architecture comparisons, and regulatory breakdowns on ERP systems, e-invoicing compliance, and digital transformation in Ethiopia.
+                Practical guides, architecture comparisons, and regulatory breakdowns on ERP systems, MOR e-invoicing compliance, and global software outsourcing from Ethiopia.
               </p>
             </div>
 
             {/* Quick Metrics / Topics */}
-            <div className="mb-14 grid gap-4 rounded-xl border border-white/[0.06] bg-[#0D1527] p-6 sm:grid-cols-3">
+            <div className="mb-14 grid gap-4 rounded-xl border border-white/[0.06] bg-[#0D1527] p-6 sm:grid-cols-2 lg:grid-cols-4">
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[--gold]/10 text-[--gold]">
                   <BookOpen className="h-5 w-5" />
                 </div>
                 <div>
-                  <p className="font-heading text-lg font-semibold text-white">ERP Systems</p>
+                  <p className="font-heading text-base font-semibold text-white">ERP Systems</p>
                   <p className="text-xs text-[--text-secondary]">Odoo, ERPNext, Custom, SAP</p>
                 </div>
               </div>
@@ -77,8 +77,17 @@ export default function BlogPage() {
                   <Sparkles className="h-5 w-5" />
                 </div>
                 <div>
-                  <p className="font-heading text-lg font-semibold text-white">Ethiopian Compliance</p>
-                  <p className="text-xs text-[--text-secondary]">ERCA E-Invoicing & Local Tax</p>
+                  <p className="font-heading text-base font-semibold text-white">E-Invoicing SaaS</p>
+                  <p className="text-xs text-[--text-secondary]">MOR Tax Compliance & SRM</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[--gold]/10 text-[--gold]">
+                  <Globe2 className="h-5 w-5" />
+                </div>
+                <div>
+                  <p className="font-heading text-base font-semibold text-white">Global Outsourcing</p>
+                  <p className="text-xs text-[--text-secondary]">USA, Europe, UAE Delivery</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -86,8 +95,8 @@ export default function BlogPage() {
                   <ArrowRight className="h-5 w-5" />
                 </div>
                 <div>
-                  <p className="font-heading text-lg font-semibold text-white">Architecture</p>
-                  <p className="text-xs text-[--text-secondary]">Scalable African Infrastructure</p>
+                  <p className="font-heading text-base font-semibold text-white">Architecture</p>
+                  <p className="text-xs text-[--text-secondary]">Rust, Next.js, Go, Python</p>
                 </div>
               </div>
             </div>

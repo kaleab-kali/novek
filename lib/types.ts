@@ -193,5 +193,6 @@ export interface SiteConfig {
     instagram: string;
   };
   googleVerification?: string;
+  yandexVerification?: string;
   calendlyUrl?: string;
 }

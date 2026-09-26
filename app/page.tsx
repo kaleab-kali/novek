@@ -2,6 +2,7 @@ import { generatePageMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/data/site";
 import { Hero } from "@/components/sections/hero";
 import { ServicesGrid } from "@/components/sections/services-grid";
+import { GlobalOutsourcingPreview } from "@/components/sections/global-outsourcing-preview";
 import { ProductsShowcase } from "@/components/sections/products-showcase";
 import { AboutSnapshot } from "@/components/sections/about-snapshot";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
@@ -20,6 +21,9 @@ export const metadata = generatePageMetadata({
     "software company Addis Ababa",
     "software development Ethiopia",
     "custom software Ethiopia",
+    "best outsourcing company in ethiopia",
+    "software outsourcing company ethiopia",
+    "hire developers in ethiopia",
     "ERP systems Ethiopia",
     "e-invoicing software Ethiopia",
     "AI integration Ethiopia",
@@ -33,6 +37,7 @@ export default function HomePage() {
     <>
       <Hero />
       <ServicesGrid />
+      <GlobalOutsourcingPreview />
       <ProductsShowcase />
       <ImpactMetrics />
       <AboutSnapshot />
