@@ -60,19 +60,6 @@ export const Hero = React.memo(() => {
           
           {/* Left Column: International Agency Copywriting (7 cols) */}
           <div className="lg:col-span-7">
-            {/* Brand Authority Kicker Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: -4 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3 }}
-              className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#C9A96E]/30 bg-[#C9A96E]/10 px-3.5 py-1 text-[12px] font-medium tracking-wide text-[#C9A96E] backdrop-blur-sm"
-            >
-              <span className="h-1.5 w-1.5 rounded-full bg-[#C9A96E] animate-pulse" />
-              <span className="font-semibold text-[#FAF8F5]">NOVEK ICT Solutions</span>
-              <span className="text-[#A39D92]">&bull;</span>
-              <span className="text-[#C9A96E]">Software &amp; AI</span>
-            </motion.div>
-
             {/* Commanding, Outcome-First Headline */}
             <motion.h1
               initial={{ opacity: 0, y: 8 }}
