@@ -195,4 +195,5 @@ export interface SiteConfig {
   googleVerification?: string;
   yandexVerification?: string;
   calendlyUrl?: string;
+  brandAliases?: string[];
 }

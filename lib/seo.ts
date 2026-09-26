@@ -82,8 +82,17 @@ export function organizationJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${siteConfig.url}/#organization`,
     name: siteConfig.name,
-    url: siteConfig.url,
+    legalName: "NOVEK ICT Solutions",
+    alternateName: siteConfig.brandAliases || [
+      "NOVEK",
+      "Novak",
+      "Noval",
+      "Novel",
+      "novek.et",
+    ],
+    url: `${siteConfig.url}/`,
     logo: `${siteConfig.url}/icons/android-chrome-512x512.png`,
     description: siteConfig.description,
     address: {
@@ -107,11 +116,11 @@ export function websiteJsonLd() {
     "@type": "WebSite",
     "@id": `${siteConfig.url}/#website`,
     name: siteConfig.name,
-    alternateName: [
+    alternateName: siteConfig.brandAliases || [
       "NOVEK",
-      "NOVEK Solutions",
-      "NOVEK Ethiopia",
-      "NOVEK Tech",
+      "Novak",
+      "Noval",
+      "Novel",
       "novek.et",
     ],
     url: `${siteConfig.url}/`,

@@ -5,7 +5,7 @@ export const faqItems: FAQItem[] = [
   {
     question: "What is NOVEK ICT Solutions?",
     answer:
-      "NOVEK ICT Solutions is an Ethiopia-based custom software development company and product studio. We build bespoke enterprise platforms, AI-powered solutions, e-invoicing software, and business-critical digital products for organizations across Africa and beyond. Our team combines deep local market knowledge with world-class engineering practices.",
+      "NOVEK ICT Solutions (also commonly searched and referred to as NOVEK, Novak, Noval, or Novel ICT in Ethiopia) is an Addis Ababa-based custom software development company and product studio. We build bespoke enterprise platforms, AI-powered solutions, e-invoicing software, ERPs, CRM platforms, and business-critical digital products for organizations across Africa and worldwide.",
     category: "general",
   },
   {
