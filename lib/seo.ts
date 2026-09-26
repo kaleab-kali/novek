@@ -52,6 +52,12 @@ export function generatePageMetadata({
       description,
       images: [ogImage],
     },
+    applicationName: siteConfig.name,
+    appleWebApp: {
+      title: "NOVEK",
+      statusBarStyle: "default",
+      capable: true,
+    },
     robots: {
       index: true,
       follow: true,
@@ -99,12 +105,25 @@ export function websiteJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${siteConfig.url}/#website`,
     name: siteConfig.name,
-    url: siteConfig.url,
+    alternateName: [
+      "NOVEK",
+      "NOVEK Solutions",
+      "NOVEK Ethiopia",
+      "NOVEK Tech",
+      "novek.et",
+    ],
+    url: `${siteConfig.url}/`,
     description: siteConfig.description,
     publisher: {
       "@type": "Organization",
+      "@id": `${siteConfig.url}/#organization`,
       name: siteConfig.name,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteConfig.url}/logo1.png`,
+      },
     },
   };
 }

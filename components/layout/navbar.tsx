@@ -53,7 +53,7 @@ export function Navbar() {
           <Link href="/" className="relative z-10 flex items-center gap-2">
             <Image
               src="/logo.png"
-              alt="NOVEK"
+              alt="NOVEK ICT Solutions"
               width={32}
               height={32}
               className="h-8 w-8"

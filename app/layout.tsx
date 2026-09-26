@@ -108,11 +108,19 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  applicationName: siteConfig.name,
+  appleWebApp: {
+    title: "NOVEK",
+    statusBarStyle: "default",
+    capable: true,
+  },
   verification: {
     google: siteConfig.googleVerification || undefined,
     yandex: siteConfig.yandexVerification || "194f462845dea97b",
   },
   other: {
+    "application-name": siteConfig.name,
+    "apple-mobile-web-app-title": "NOVEK",
     "msapplication-TileImage": "/icons/mstile-150x150.png",
     "msapplication-TileColor": "#0A0F1E",
     "theme-color": "#0A0F1E",
@@ -153,6 +161,8 @@ export default function RootLayout({
     >
       <head>
         <meta name="yandex-verification" content="194f462845dea97b" />
+        <meta name="application-name" content="NOVEK ICT Solutions" />
+        <meta name="apple-mobile-web-app-title" content="NOVEK" />
         {/* Organization Schema */}
         <script
           type="application/ld+json"
@@ -160,9 +170,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
+              "@id": `${siteConfig.url}/#organization`,
               name: siteConfig.name,
-              url: siteConfig.url,
+              legalName: "NOVEK ICT Solutions",
+              alternateName: ["NOVEK", "NOVEK Ethiopia", "NOVEK Tech"],
+              url: `${siteConfig.url}/`,
               logo: `${siteConfig.url}/logo1.png`,
+              image: `${siteConfig.url}/logo1.png`,
               description: siteConfig.description,
               address: {
                 "@type": "PostalAddress",
@@ -216,19 +230,27 @@ export default function RootLayout({
             }),
           }}
         />
-        {/* WebSite Schema: enables sitelinks search box in Google */}
+        {/* WebSite Schema: official Google Search Central specification for Site Names */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
+              "@id": `${siteConfig.url}/#website`,
               name: siteConfig.name,
-              alternateName: "NOVEK",
-              url: siteConfig.url,
+              alternateName: [
+                "NOVEK",
+                "NOVEK Solutions",
+                "NOVEK Ethiopia",
+                "NOVEK Tech",
+                "novek.et",
+              ],
+              url: `${siteConfig.url}/`,
               description: siteConfig.description,
               publisher: {
                 "@type": "Organization",
+                "@id": `${siteConfig.url}/#organization`,
                 name: siteConfig.name,
                 logo: {
                   "@type": "ImageObject",
